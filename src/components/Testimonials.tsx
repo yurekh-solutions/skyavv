@@ -142,11 +142,11 @@ const Testimonials = () => {
           <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Our Track Record</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6">
             <div className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-white/40">
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">1000+</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">5000+</div>
               <p className="text-xs md:text-sm text-gray-600 font-medium">Happy Clients</p>
             </div>
             <div className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-white/40">
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">5000+</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">10 Lakh+</div>
               <p className="text-xs md:text-sm text-gray-600 font-medium">Events Covered</p>
             </div>
             <div className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-white/40">

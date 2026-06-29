@@ -1,5 +1,5 @@
 interface StatItem {
-  value: number;
+  value: number | string;
   suffix?: string;
   label: string;
 }
@@ -9,10 +9,10 @@ interface StatsBarProps {
 }
 
 const defaultStats: StatItem[] = [
-  { value: 15, suffix: "+", label: "Years Experience" },
-  { value: 5000, suffix: "+", label: "Events Powered" },
-  { value: 500, suffix: "+", label: "Happy Clients" },
-  { value: 4.8, suffix: "★", label: "Average Rating" },
+  { value: 25, suffix: "+", label: "Years Experience" },
+  { value: "10 Lakh+", label: "Events Powered" },
+  { value: 5000, suffix: "+", label: "Happy Clients" },
+  { value: 4.9, suffix: "★", label: "Average Rating" },
 ];
 
 const StatsBar = ({ stats = defaultStats }: StatsBarProps) => {

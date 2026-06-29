@@ -57,7 +57,7 @@ export default function PrivacyPolicy() {
               },
               {
                 title: "Contact Us",
-                content: "If you have questions about this privacy policy or our data practices, please contact us at: Sky Vision Multimedia, Room No 951, Nayagaon Near Maharashtra Hotel, Laxman Mahatre Road, Dahisar West, Mumbai 400068. Email: sky.av.rentals@gmail.com. Phone: +91 86559 73366."
+                content: "If you have questions about this privacy policy or our data practices, please contact us at: Sky Vision Multimedia, Room No 951, Nayagaon Near Maharashtra Hotel, Laxman Mahatre Road, Dahisar West, Mumbai 400068. Email: sky.av.rentals@gmail.com. Phone: +91 86559 73366 / +91 99201 58955."
               },
             ].map((section, i) => (
               <div key={i} className="glass-card rounded-2xl p-6 md:p-8">

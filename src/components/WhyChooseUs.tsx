@@ -35,7 +35,7 @@ const WhyChooseUs = () => {
     {
       icon: CheckCircle,
       title: "Trusted by 1000+",
-      description: "Successfully delivered 5000+ events. Rated 4.9/5 by satisfied clients.",
+      description: "Successfully delivered 10 Lakh+ events. Rated 4.9/5 by satisfied clients.",
       color: "from-indigo-500 to-blue-500"
     }
   ];
@@ -105,6 +105,12 @@ const WhyChooseUs = () => {
                 className="px-6 py-3 bg-white text-primary rounded-full font-semibold hover:bg-gray-100 transition-colors whitespace-nowrap"
               >
                 Call +91 86559 73366
+              </a>
+              <a
+                href="tel:+919920158955"
+                className="px-6 py-3 bg-white/80 text-indigo-600 rounded-full font-semibold hover:bg-white transition-colors whitespace-nowrap"
+              >
+                +91 99201 58955
               </a>
               <a
                 href="https://wa.me/918655973366"

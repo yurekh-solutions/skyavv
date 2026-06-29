@@ -64,7 +64,7 @@ const Gallery = () => {
 
       <section className="py-8 md:py-16 pb-16 md:pb-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading badge="Portfolio" title="5000+ Events" highlight="Powered" description="Filter by category to explore our work across different event types and equipment." />
+          <SectionHeading badge="Portfolio" title="10 Lakh+ Events" highlight="Powered" description="Filter by category to explore our work across different event types and equipment." />
           <ImageGallery items={items} columns={3} />
         </div>
       </section>

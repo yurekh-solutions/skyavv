@@ -33,7 +33,7 @@ const FlipCard = ({ image, title, badge, frontDescription, backDescription, feat
         {/* Front */}
         <div className="relative rounded-2xl overflow-hidden" style={{ backfaceVisibility: "hidden" }}>
           <div className="relative h-72 md:h-80">
-            <img src={image} alt={title} className="w-full h-full object-cover" loading="lazy" />
+            <img src={image} alt={title} className="w-full h-full object-cover" loading="lazy" decoding="async" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
             {badge && (
               <span className="absolute top-3 right-3 px-2.5 py-1 vibrant-gradient text-white rounded-full text-xs font-bold shadow-lg">

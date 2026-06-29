@@ -22,7 +22,7 @@ const Contact = () => {
     "mainEntity": {
       "@type": "LocalBusiness",
       "name": "Sky Vision Multimedia",
-      "telephone": "+918655973366",
+      "telephone": ["+918655973366", "+919920158955"],
       "email": "sky.av.rentals@gmail.com",
       "address": {
         "@type": "PostalAddress",
@@ -155,8 +155,11 @@ const Contact = () => {
                 <Phone className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-xl font-bold mb-2">Call Us</h3>
-                  <a href="tel:+918655973366" className="text-lg text-muted-foreground hover:text-primary transition-colors">
+                  <a href="tel:+918655973366" className="text-lg text-muted-foreground hover:text-primary transition-colors block">
                     +91 86559 73366
+                  </a>
+                  <a href="tel:+919920158955" className="text-lg text-muted-foreground hover:text-primary transition-colors block mt-1">
+                    +91 99201 58955
                   </a>
                   <p className="text-sm text-muted-foreground mt-1">Available 24/7</p>
                 </div>

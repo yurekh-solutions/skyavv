@@ -17,11 +17,11 @@ const About = () => {
   ];
 
   const timeline = [
-    { year: "2010", title: "The Beginning", desc: "Sky Vision Multimedia was founded in Dahisar, Mumbai with a single projector and a big dream." },
+    { year: "2001", title: "The Beginning", desc: "Sky Vision Multimedia was founded in Mumbai with a single projector and a big dream." },
     { year: "2014", title: "Expanding Services", desc: "Added LED walls, sound systems, and stage lighting to our rental catalog. First major corporate event." },
     { year: "2018", title: "500+ Events Milestone", desc: "Crossed 500 events powered. Expanded to serve Navi Mumbai, Thane, and Pune with dedicated delivery teams." },
     { year: "2022", title: "Premium Equipment", desc: "Invested in P2.5 LED walls, line array sound systems, and 4K projection technology. 4.8-star rating achieved." },
-    { year: "2026", title: "5000+ Events", desc: "Now serving 7 cities across Maharashtra & Goa with 500+ corporate clients and 5000+ events powered." },
+    { year: "2026", title: "10 Lakh+ Events", desc: "Now serving 7 cities across Maharashtra & Goa with 5000+ corporate clients and 10 Lakh+ events powered." },
   ];
 
   const certifications = [
@@ -40,7 +40,7 @@ const About = () => {
       <PageHero
         title="About"
         highlight="Sky Vision"
-        description="Mumbai's most trusted AV equipment rental company. For over 15 years, we've been powering spectacular events across Maharashtra with premium technology and unmatched service."
+        description="Mumbai's most trusted AV equipment rental company. For over 25 years, we've been powering spectacular events across Maharashtra with premium technology and unmatched service."
         breadcrumbs={[{ label: "About Us", path: "/about" }]}
       />
 
@@ -49,16 +49,17 @@ const About = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="rounded-3xl overflow-hidden glass-card p-2">
-              <img src={teamImg} alt="Sky Vision Multimedia team" className="w-full rounded-2xl" />
+              <img src={teamImg} alt="Sky Vision Multimedia team" className="w-full rounded-2xl" loading="lazy" decoding="async" />
             </div>
             <div className="space-y-4">
               <span className="inline-block px-4 py-2 glass-vibrant text-primary rounded-full text-sm font-semibold border border-primary/20">Our Story</span>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900">From a Single Projector to 5000+ Events</h2>
-              <p className="text-gray-600 leading-relaxed">It all started in 2010 when our founder, frustrated by the lack of reliable AV rental options in Mumbai, decided to change the game. With just one projector and an unwavering commitment to quality, Sky Vision Multimedia was born.</p>
-              <p className="text-gray-600 leading-relaxed">Today, we're Mumbai's go-to AV rental company with an extensive inventory of LED walls, sound systems, projectors, lighting, and more. We've powered over 5000 events — from intimate birthday parties to massive corporate conferences and stadium concerts.</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900">From a Single Projector to 10 Lakh+ Events</h2>
+              <p className="text-gray-600 leading-relaxed">It all started 25+ years ago when our founder, frustrated by the lack of reliable AV rental options in Mumbai, decided to change the game. With just one projector and an unwavering commitment to quality, Sky Vision Multimedia was born.</p>
+              <p className="text-gray-600 leading-relaxed">Today, we're Mumbai's go-to AV rental company with an extensive inventory of LED walls, sound systems, projectors, lighting, and more. We've powered over 10 Lakh events — from intimate birthday parties to massive corporate conferences and stadium concerts.</p>
               <p className="text-gray-600 leading-relaxed">What hasn't changed is our core promise: premium equipment, fair pricing, and service that goes above and beyond. Every event matters to us, whether it's a 50-person seminar or a 5000-guest concert.</p>
               <div className="flex flex-wrap gap-3">
-                <a href="tel:+918655973366" className="inline-flex items-center gap-2 px-6 py-3 vibrant-gradient text-white rounded-full font-bold hover:scale-105 transition-transform"><Phone className="h-4 w-4" /> Talk to Us</a>
+                <a href="tel:+918655973366" className="inline-flex items-center gap-2 px-6 py-3 vibrant-gradient text-white rounded-full font-bold hover:scale-105 transition-transform"><Phone className="h-4 w-4" /> +91 86559 73366</a>
+                <a href="tel:+919920158955" className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-500 to-blue-500 text-white rounded-full font-bold hover:scale-105 transition-transform"><Phone className="h-4 w-4" /> +91 99201 58955</a>
                 <Link to="/contact" className="inline-flex items-center gap-2 px-6 py-3 glass-card rounded-full font-bold text-primary hover:scale-105 transition-transform">Contact Page</Link>
               </div>
             </div>
@@ -136,7 +137,7 @@ const About = () => {
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="rounded-3xl overflow-hidden glass-card p-2 relative">
-            <img src={setupImg} alt="Sky Vision AV equipment setup" className="w-full rounded-2xl" />
+            <img src={setupImg} alt="Sky Vision AV equipment setup" className="w-full rounded-2xl" loading="lazy" decoding="async" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-2xl" />
             <div className="absolute bottom-8 left-8 right-8 text-white">
               <h3 className="text-2xl md:text-3xl font-bold mb-2">Professional Equipment, Expert Setup</h3>

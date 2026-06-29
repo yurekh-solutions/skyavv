@@ -3,7 +3,7 @@ export const seoConfig = {
   siteName: "Sky Vision Multimedia",
   siteUrl: "https://skyav.in",
   defaultTitle: "Sky Vision Multimedia - Professional AV Equipment Rental in Mumbai",
-  defaultDescription: "Premium Projector, LED Wall, Sound System & AV Equipment Rental in Mumbai. 15+ years experience. Serving Mumbai, Navi Mumbai, Thane, Pune. Call +91 86559 73366",
+  defaultDescription: "Premium Projector, LED Wall, Sound System & AV Equipment Rental in Mumbai. 25+ years experience. Serving Mumbai, Navi Mumbai, Thane, Pune. Call +91 86559 73366",
   defaultKeywords: "projector rental mumbai, LED wall rental, sound system rental, karaoke rental mumbai, AV equipment rental, event equipment rental mumbai, corporate AV rental",
   twitterHandle: "@skyavin",
   instagramHandle: "@skyav.in",
@@ -57,12 +57,12 @@ export const pageSEO: Record<string, { title: string; description: string; keywo
   // Core pages
   home: {
     title: "AV Equipment Rental Mumbai | LED Wall, Projector, Sound System | Sky Vision",
-    description: "Mumbai's #1 AV equipment rental company. LED wall rental, projector rental, sound system rental, stage lighting & more. 5000+ events powered. Free delivery & setup. Call +91 86559 73366.",
+    description: "Mumbai's #1 AV equipment rental company. LED wall rental, projector rental, sound system rental, stage lighting & more. 10 Lakh+ events powered. Free delivery & setup. Call +91 86559 73366.",
     keywords: "AV equipment rental Mumbai, LED wall rental Mumbai, projector rental Mumbai, sound system rental, stage lighting rental, event equipment rental, corporate AV rental, wedding AV Mumbai"
   },
   about: {
-    title: "About Sky Vision Multimedia | 15+ Years AV Rental Expertise in Mumbai",
-    description: "Learn about Sky Vision Multimedia — Mumbai's trusted AV equipment rental company with 15+ years experience. 5000+ events powered, 500+ happy clients, 4.8-star rating. Expert team & premium equipment.",
+    title: "About Sky Vision Multimedia | 25+ Years AV Rental Expertise in Mumbai",
+    description: "Learn about Sky Vision Multimedia — Mumbai's trusted AV equipment rental company with 25+ years experience. 10 Lakh+ events powered, 5000+ happy clients, 4.9-star rating. Expert team & premium equipment.",
     keywords: "about sky vision, AV rental company Mumbai, event technology Mumbai, AV equipment provider, multimedia company Mumbai"
   },
   contact: {
@@ -82,7 +82,7 @@ export const pageSEO: Record<string, { title: string; description: string; keywo
   },
   gallery: {
     title: "Event Gallery | AV Setup Photos & Videos | Sky Vision Mumbai",
-    description: "Browse our portfolio of 5000+ events — weddings, corporate events, concerts, exhibitions. See LED walls, sound systems, and lighting setups in action across Mumbai, Pune, Goa.",
+    description: "Browse our portfolio of 10 Lakh+ events — weddings, corporate events, concerts, exhibitions. See LED walls, sound systems, and lighting setups in action across Mumbai, Pune, Goa.",
     keywords: "event gallery Mumbai, AV setup photos, LED wall photos, event portfolio, wedding AV photos, corporate event gallery"
   },
   videos: {
@@ -300,7 +300,7 @@ export const pageSEO: Record<string, { title: string; description: string; keywo
   // Blog pages
   "blog/how-to-choose-led-wall": {
     title: "How to Choose LED Wall for Your Event | Complete Guide | Sky Vision",
-    description: "Complete guide to choosing the right LED wall for your event. Pixel pitch explained, indoor vs outdoor, sizing guide, brightness requirements, pricing. Expert tips from 15+ years experience.",
+    description: "Complete guide to choosing the right LED wall for your event. Pixel pitch explained, indoor vs outdoor, sizing guide, brightness requirements, pricing. Expert tips from 25+ years experience.",
     keywords: "how to choose LED wall, LED wall buying guide, pixel pitch guide, LED screen selection, indoor vs outdoor LED, LED wall sizing, event LED guide"
   },
   "blog/led-wall-vs-projector": {

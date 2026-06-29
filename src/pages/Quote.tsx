@@ -43,6 +43,7 @@ export default function Quote() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
             {[
               { icon: Phone, label: "Call Us", value: "+91 86559 73366", href: "tel:+918655973366" },
+                            { icon: Phone, label: "Call Us (Alt)", value: "+91 99201 58955", href: "tel:+919920158955" },
               { icon: Mail, label: "Email Us", value: "sky.av.rentals@gmail.com", href: "mailto:sky.av.rentals@gmail.com" },
               { icon: Clock, label: "Response Time", value: "Within 30 minutes", href: undefined },
               { icon: MapPin, label: "Location", value: "Mumbai, Maharashtra", href: undefined },
@@ -75,7 +76,7 @@ export default function Quote() {
                   <CheckCircle2 className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Quote Request Received!</h3>
-                <p className="text-gray-600 leading-relaxed">Thank you! Our team will review your requirements and get back to you within 30 minutes during business hours. For urgent queries, call us directly at <a href="tel:+918655973366" className="font-bold text-primary">+91 86559 73366</a>.</p>
+                <p className="text-gray-600 leading-relaxed">Thank you! Our team will review your requirements and get back to you within 30 minutes during business hours. For urgent queries, call us directly at <a href="tel:+918655973366" className="font-bold text-primary">+91 86559 73366</a> or <a href="tel:+919920158955" className="font-bold text-primary">+91 99201 58955</a>.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="glass-card rounded-3xl p-6 md:p-10 space-y-6">

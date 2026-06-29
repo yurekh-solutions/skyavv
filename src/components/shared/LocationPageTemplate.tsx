@@ -58,7 +58,7 @@ const LocationPageTemplate = ({ data }: { data: LocationPageData }) => {
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900">{data.pageTitle} {data.pageHighlight}</h2>
             <p className="text-gray-600 leading-relaxed">{data.overview}</p>
             <ul className="space-y-2">
-              {["Free delivery & professional setup", "15+ years of AV rental experience", "Premium branded equipment", "Same-day delivery available"].map((item) => (
+              {["Free delivery & professional setup", "25+ years of AV rental experience", "Premium branded equipment", "Same-day delivery available"].map((item) => (
                 <li key={item} className="flex items-center gap-2 text-gray-700"><CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0" /> {item}</li>
               ))}
             </ul>

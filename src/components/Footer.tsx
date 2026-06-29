@@ -32,11 +32,14 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
-              Mumbai's trusted AV equipment rental partner for 15+ years. LED walls, sound systems, lighting & more.
+              Mumbai's trusted AV equipment rental partner for 25+ years. LED walls, sound systems, lighting & more.
             </p>
             <div className="space-y-2 text-sm">
               <a href="tel:+918655973366" className="flex items-center gap-2 text-gray-300 hover:text-primary transition-colors">
                 <Phone className="h-4 w-4 flex-shrink-0" /> +91 86559 73366
+              </a>
+              <a href="tel:+919920158955" className="flex items-center gap-2 text-gray-300 hover:text-primary transition-colors">
+                <Phone className="h-4 w-4 flex-shrink-0" /> +91 99201 58955
               </a>
               <a href="mailto:sky.av.rentals@gmail.com" className="flex items-center gap-2 text-gray-300 hover:text-primary transition-colors break-all">
                 <Mail className="h-4 w-4 flex-shrink-0" /> sky.av.rentals@gmail.com

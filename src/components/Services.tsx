@@ -70,7 +70,7 @@ const Services = () => {
       "provider": {
         "@type": "LocalBusiness",
         "name": "Sky Vision Multimedia",
-        "telephone": "+918655973366",
+        "telephone": ["+918655973366", "+919920158955"],
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Mumbai",
@@ -135,6 +135,7 @@ const Services = () => {
                     alt={`${service.title} service in Mumbai`}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     loading="lazy"
+                    decoding="async"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
                   <div className="absolute top-4 left-4">

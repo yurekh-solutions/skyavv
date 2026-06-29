@@ -59,7 +59,7 @@ const Index = () => {
   ];
 
   const whyChooseUs = [
-    { icon: Award, title: "15+ Years Experience", desc: "Mumbai's most trusted AV rental company with 5000+ events powered" },
+    { icon: Award, title: "25+ Years Experience", desc: "Mumbai's most trusted AV rental company with 10 Lakh+ events powered" },
     { icon: Clock, title: "Same-Day Delivery", desc: "Urgent requirement? We deliver and set up within hours across Mumbai" },
     { icon: Shield, title: "Quality Guaranteed", desc: "Premium equipment with backup units and 24/7 technical support" },
     { icon: Users, title: "Expert Team", desc: "Certified AV technicians who ensure flawless event execution" },
@@ -211,7 +211,7 @@ const Index = () => {
               </h1>
 
               <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-xl">
-                LED walls, concert-grade sound, stage lighting & complete AV rentals across Mumbai, Navi Mumbai, Thane, Pune & Goa. 5000+ events powered with flawless execution and same-day setup.
+                LED walls, concert-grade sound, stage lighting & complete AV rentals across Mumbai, Navi Mumbai, Thane, Pune & Goa. 10 Lakh+ events powered with flawless execution and same-day setup.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -227,7 +227,7 @@ const Index = () => {
                 <div className="flex items-center gap-1">
                   {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 text-yellow-400 fill-yellow-400" />)}
                 </div>
-                <span className="text-sm text-gray-600 font-medium">4.8/5 · 500+ Happy Clients</span>
+                <span className="text-sm text-gray-600 font-medium">4.9/5 · 5000+ Happy Clients</span>
               </div>
             </div>
 
@@ -250,7 +250,7 @@ const Index = () => {
 
               {/* Floating stat badges */}
               <div className="absolute -top-4 -right-4 glass-strong rounded-2xl p-4 shadow-xl animate-float">
-                <div className="text-2xl md:text-3xl font-bold text-gradient-vibrant">5000+</div>
+                <div className="text-2xl md:text-3xl font-bold text-gradient-vibrant">10 Lakh+</div>
                 <div className="text-xs text-gray-500 font-medium">Events Powered</div>
               </div>
               <div className="absolute -bottom-4 -left-4 glass-strong rounded-2xl p-4 shadow-xl animate-float-slow">
@@ -286,7 +286,7 @@ const Index = () => {
           <SectionHeading badge="What We Offer" title="Premium AV" highlight="Services" description="From LED walls to concert sound — everything you need for a spectacular event." />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 max-w-6xl mx-auto">
             <Link to="/services/led-wall-rental" className="group md:col-span-2 relative h-80 md:h-96 rounded-2xl overflow-hidden hover-lift">
-              <img src={ledWallImg} alt="LED Wall Rental Mumbai" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy" />
+              <img src={ledWallImg} alt="LED Wall Rental Mumbai" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy" decoding="async" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
               <span className="absolute top-4 left-4 px-3 py-1 vibrant-gradient text-white rounded-full text-xs font-bold shadow-lg">Popular</span>
               <div className="absolute bottom-0 left-0 right-0 p-6">
@@ -296,7 +296,7 @@ const Index = () => {
               </div>
             </Link>
             <Link to="/services/sound-system-rental" className="group relative h-80 md:h-96 rounded-2xl overflow-hidden hover-lift">
-              <img src={soundSystemImg} alt="Sound System Rental Mumbai" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy" />
+              <img src={soundSystemImg} alt="Sound System Rental Mumbai" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy" decoding="async" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
               <span className="absolute top-4 left-4 px-3 py-1 bg-cyan-500 text-white rounded-full text-xs font-bold shadow-lg">Quality</span>
               <div className="absolute bottom-0 left-0 right-0 p-5">
@@ -305,7 +305,7 @@ const Index = () => {
               </div>
             </Link>
             <Link to="/services/projector-rental" className="group relative h-72 rounded-2xl overflow-hidden hover-lift">
-              <img src={projectorImg} alt="Projector Rental Mumbai" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy" />
+              <img src={projectorImg} alt="Projector Rental Mumbai" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy" decoding="async" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
               <span className="absolute top-4 left-4 px-3 py-1 bg-violet-500 text-white rounded-full text-xs font-bold shadow-lg">Best Seller</span>
               <div className="absolute bottom-0 left-0 right-0 p-5">
@@ -314,7 +314,7 @@ const Index = () => {
               </div>
             </Link>
             <Link to="/services/stage-lighting-rental" className="group relative h-72 rounded-2xl overflow-hidden hover-lift">
-              <img src={gallery2} alt="Stage Lighting Rental Mumbai" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy" />
+              <img src={gallery2} alt="Stage Lighting Rental Mumbai" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy" decoding="async" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
               <span className="absolute top-4 left-4 px-3 py-1 bg-pink-500 text-white rounded-full text-xs font-bold shadow-lg">Trending</span>
               <div className="absolute bottom-0 left-0 right-0 p-5">
@@ -323,7 +323,7 @@ const Index = () => {
               </div>
             </Link>
             <Link to="/services/photography-videography" className="group relative h-72 rounded-2xl overflow-hidden hover-lift">
-              <img src={gallery3} alt="Photography Videography Mumbai" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy" />
+              <img src={gallery3} alt="Photography Videography Mumbai" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy" decoding="async" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
               <span className="absolute top-4 left-4 px-3 py-1 bg-orange-500 text-white rounded-full text-xs font-bold shadow-lg">Complete</span>
               <div className="absolute bottom-0 left-0 right-0 p-5">
@@ -353,7 +353,7 @@ const Index = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {events.map((event, i) => (
               <Link key={i} to={event.link} className="group relative h-80 rounded-2xl overflow-hidden hover-lift">
-                <img src={event.image} alt={event.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy" />
+                <img src={event.image} alt={event.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy" decoding="async" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
                 <div className="absolute top-4 right-4 w-10 h-10 glass-dark rounded-full flex items-center justify-center group-hover:scale-110 group-hover:bg-primary transition-all">
                   <ArrowRight className="h-4 w-4 text-white" />
@@ -446,7 +446,7 @@ const Index = () => {
           <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 md:gap-6 max-w-6xl mx-auto [&>*]:mb-4 md:[&>*]:mb-6">
             {galleryItems.map((item, i) => (
               <div key={i} className="break-inside-avoid group relative rounded-2xl overflow-hidden hover-lift">
-                <img src={item.image} alt={item.title} className="w-full object-cover" loading="lazy" />
+                <img src={item.image} alt={item.title} className="w-full object-cover" loading="lazy" decoding="async" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-0 left-0 right-0 p-5 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
                   <span className="inline-block px-2.5 py-0.5 glass-dark rounded-full text-xs text-white font-semibold mb-1.5">{item.category}</span>
@@ -463,7 +463,7 @@ const Index = () => {
       {/* ===== NEW: Testimonials Marquee (Forward + Reverse) ===== */}
       <section className="py-16 md:py-24 relative overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading badge="Client Love" title="What Our" highlight="Clients Say" description="500+ happy clients and a 4.8-star rating across Mumbai, Pune, and Goa." />
+          <SectionHeading badge="Client Love" title="What Our" highlight="Clients Say" description="5000+ happy clients and a 4.9-star rating across Mumbai, Pune, and Goa." />
         </div>
 
         {/* Forward marquee row */}

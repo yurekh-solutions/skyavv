@@ -18,6 +18,7 @@ const Contact = () => {
 
   const contactCards = [
     { icon: Phone, label: "Call Us", value: "+91 86559 73366", href: "tel:+918655973366", color: "from-blue-500 to-violet-500" },
+    { icon: Phone, label: "Call Us (Alt)", value: "+91 99201 58955", href: "tel:+919920158955", color: "from-indigo-500 to-blue-500" },
     { icon: MessageCircle, label: "WhatsApp", value: "Chat with us", href: "https://wa.me/918655973366", color: "from-green-500 to-emerald-500" },
     { icon: Mail, label: "Email Us", value: "sky.av.rentals@gmail.com", href: "mailto:sky.av.rentals@gmail.com", color: "from-violet-500 to-pink-500" },
     { icon: Clock, label: "Working Hours", value: "Mon-Sun: 9am - 9pm", href: null, color: "from-pink-500 to-orange-500" },

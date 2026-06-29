@@ -44,7 +44,10 @@ const ServicesOverview = () => {
             Get a Quote <ArrowRight className="h-4 w-4" />
           </Link>
           <a href="tel:+918655973366" className="inline-flex items-center gap-2 px-6 py-3 glass-card rounded-full font-bold text-primary hover:scale-105 transition-transform">
-            Call Now
+            +91 86559 73366
+          </a>
+          <a href="tel:+919920158955" className="inline-flex items-center gap-2 px-6 py-3 glass-card rounded-full font-bold text-indigo-600 hover:scale-105 transition-transform">
+            +91 99201 58955
           </a>
         </div>
       </PageHero>
@@ -86,7 +89,7 @@ const ServicesOverview = () => {
       {/* Why Choose Us */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading badge="Why Sky Vision" title="Trusted by" highlight="5000+ Events" />
+          <SectionHeading badge="Why Sky Vision" title="Trusted by" highlight="10 Lakh+ Events" />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { title: "Free Delivery & Setup", desc: "Free delivery and professional setup across Mumbai, Navi Mumbai & Thane." },

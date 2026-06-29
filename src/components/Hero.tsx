@@ -11,6 +11,9 @@ const Hero = () => {
           src={heroImage}
           alt="Professional AV equipment setup at corporate event in Mumbai"
           className="w-full h-full object-cover"
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/100  to-transparent" />
       </div>
@@ -34,6 +37,15 @@ const Hero = () => {
             >
               <Phone className="h-4 w-4 md:h-5 md:h-5" />
               +91 86559 73366
+            </Button>
+            <Button 
+              size="default"
+              variant="default"
+              className="text-base md:text-lg px-6 md:px-8 py-5 md:py-6 gap-2 bg-gradient-to-r from-indigo-500 to-blue-500 hover:from-indigo-600 hover:to-blue-600"
+              onClick={() => window.open('tel:+919920158955')}
+            >
+              <Phone className="h-4 w-4 md:h-5 md:h-5" />
+              +91 99201 58955
             </Button>
             <Button 
               size="default"

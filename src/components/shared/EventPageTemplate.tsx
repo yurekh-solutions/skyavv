@@ -57,7 +57,7 @@ const EventPageTemplate = ({ data }: { data: EventPageData }) => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="rounded-3xl overflow-hidden glass-card p-2">
-              <img src={data.heroImage} alt={`${data.pageTitle} ${data.pageHighlight}`} className="w-full rounded-2xl" />
+              <img src={data.heroImage} alt={`${data.pageTitle} ${data.pageHighlight}`} className="w-full rounded-2xl" loading="lazy" decoding="async" />
             </div>
             <div className="space-y-4">
               <span className="inline-block px-4 py-2 glass-vibrant text-primary rounded-full text-sm font-semibold border border-primary/20">Overview</span>

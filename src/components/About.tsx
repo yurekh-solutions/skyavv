@@ -87,6 +87,8 @@ const About = () => {
                   src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80"
                   alt="Professional LED wall setup at corporate event"
                   className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
                 
@@ -104,6 +106,8 @@ const About = () => {
                     src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=400&q=80"
                     alt="LED wall display"
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                   <div className="absolute inset-0 bg-white/0 group-hover:bg-white/10 transition-colors duration-300" />
@@ -113,6 +117,8 @@ const About = () => {
                     src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=400&q=80"
                     alt="Sound system setup"
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                   <div className="absolute inset-0 bg-white/0 group-hover:bg-white/10 transition-colors duration-300" />
@@ -122,6 +128,8 @@ const About = () => {
                     src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=400&q=80"
                     alt="Stage lighting"
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                   <div className="absolute inset-0 bg-white/0 group-hover:bg-white/10 transition-colors duration-300" />

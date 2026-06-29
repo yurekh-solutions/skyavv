@@ -70,7 +70,7 @@ const BlogArticleTemplate = ({ data }: { data: BlogArticleData }) => {
         <section className="pb-8 md:pb-12">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto rounded-3xl overflow-hidden glass-card p-2">
-              <img src={data.heroImage} alt={data.title} className="w-full rounded-2xl" />
+              <img src={data.heroImage} alt={data.title} className="w-full rounded-2xl" loading="lazy" decoding="async" />
             </div>
           </div>
         </section>

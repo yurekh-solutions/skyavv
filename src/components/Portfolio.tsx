@@ -126,6 +126,7 @@ const Portfolio = () => {
                   alt={`${item.title} - AV equipment rental Mumbai`}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-300" />
               </div>

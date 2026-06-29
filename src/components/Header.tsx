@@ -129,6 +129,13 @@ const Header = () => {
               <Phone className="h-4 w-4" />
               <span className="hidden lg:inline">Call Now</span>
             </a>
+            <a
+              href="tel:+919920158955"
+              className="hidden md:inline-flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-indigo-500 to-blue-500 text-white rounded-full text-sm font-bold shadow-lg hover:scale-105 transition-transform"
+            >
+              <Phone className="h-4 w-4" />
+              <span className="hidden lg:inline">99201 58955</span>
+            </a>
             <button
               className="lg:hidden text-gray-700 p-2"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -196,6 +203,13 @@ const Header = () => {
             >
               <Phone className="h-4 w-4" />
               Call +91 86559 73366
+            </a>
+            <a
+              href="tel:+919920158955"
+              className="flex items-center justify-center gap-2 mt-2 px-4 py-3 bg-gradient-to-r from-indigo-500 to-blue-500 text-white rounded-xl font-bold"
+            >
+              <Phone className="h-4 w-4" />
+              Call +91 99201 58955
             </a>
           </div>
         )}

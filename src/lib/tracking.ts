@@ -11,7 +11,7 @@ declare global {
 
 export const TRACKING_IDS = {
   GA4: 'G-XXXXXXXXXX', // Replace with your Google Analytics 4 ID
-  GOOGLE_ADS: 'AW-XXXXXXXXXX', // Replace with your Google Ads ID
+  GOOGLE_ADS: 'AW-862672467', // Google Ads ID
   GOOGLE_ADS_CONVERSION: 'AW-XXXXXXXXXX/YYYYYYYYYY', // Replace with conversion ID
   META_PIXEL: 'XXXXXXXXXX', // Replace with Meta/Facebook Pixel ID
 };

@@ -35,13 +35,13 @@ const Testimonials = () => {
       <PageHero
         title="Client"
         highlight="Testimonials"
-        description="Don't just take our word for it. Read genuine reviews from 500+ happy clients who trusted Sky Vision Multimedia for their event AV needs."
+        description="Don't just take our word for it. Read genuine reviews from 5000+ happy clients who trusted Sky Vision Multimedia for their event AV needs."
         breadcrumbs={[{ label: "Testimonials", path: "/testimonials" }]}
       />
 
       <section className="py-8 md:py-12">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <StatsBar stats={[{ value: 150, suffix: "+", label: "Google Reviews" }, { value: 4.8, suffix: "★", label: "Average Rating" }, { value: 500, suffix: "+", label: "Happy Clients" }, { value: 5000, suffix: "+", label: "Events Powered" }]} />
+          <StatsBar stats={[{ value: 150, suffix: "+", label: "Google Reviews" }, { value: 4.9, suffix: "★", label: "Average Rating" }, { value: 5000, suffix: "+", label: "Happy Clients" }, { value: "10 Lakh+", label: "Events Powered" }]} />
         </div>
       </section>
 
@@ -81,7 +81,7 @@ const Testimonials = () => {
         </div>
       </section>
 
-      <CTASection title="Join 500+ Happy Clients" description="Experience the Sky Vision difference for your next event." />
+      <CTASection title="Join 5000+ Happy Clients" description="Experience the Sky Vision difference for your next event." />
     </>
   );
 };
