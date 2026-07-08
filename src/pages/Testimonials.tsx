@@ -41,7 +41,7 @@ const Testimonials = () => {
 
       <section className="py-8 md:py-12">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <StatsBar stats={[{ value: 150, suffix: "+", label: "Google Reviews" }, { value: 4.9, suffix: "★", label: "Average Rating" }, { value: 5000, suffix: "+", label: "Happy Clients" }, { value: "10 Lakh+", label: "Events Powered" }]} />
+          <StatsBar stats={[{ value: 150, suffix: "+", label: "Google Reviews" }, { value: 4.8, suffix: "★", label: "Average Rating" }, { value: 5000, suffix: "+", label: "Happy Clients" }, { value: "5 Lakh+", label: "Events Powered" }]} />
         </div>
       </section>
 

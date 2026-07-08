@@ -61,7 +61,7 @@ const Hero = () => {
           <div className="flex flex-wrap gap-3 md:gap-4 text-white/90 text-sm md:text-base lg:text-lg">
             <div className="flex items-center gap-2 md:gap-3 bg-white/10 backdrop-blur-sm px-3 md:px-4 py-1.5 md:py-2 rounded-full">
               <div className="h-2 w-2 md:h-3 md:w-3 rounded-full bg-primary animate-pulse shadow-lg shadow-primary/50" />
-              <span className="font-semibold">5000+ Events</span>
+              <span className="font-semibold">5 Lakh+ Events</span>
             </div>
             <div className="flex items-center gap-2 md:gap-3 bg-white/10 backdrop-blur-sm px-3 md:px-4 py-1.5 md:py-2 rounded-full">
               <div className="h-2 w-2 md:h-3 md:w-3 rounded-full bg-primary animate-pulse shadow-lg shadow-primary/50" />

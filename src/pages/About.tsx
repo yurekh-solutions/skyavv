@@ -21,7 +21,7 @@ const About = () => {
     { year: "2014", title: "Expanding Services", desc: "Added LED walls, sound systems, and stage lighting to our rental catalog. First major corporate event." },
     { year: "2018", title: "500+ Events Milestone", desc: "Crossed 500 events powered. Expanded to serve Navi Mumbai, Thane, and Pune with dedicated delivery teams." },
     { year: "2022", title: "Premium Equipment", desc: "Invested in P2.5 LED walls, line array sound systems, and 4K projection technology. 4.8-star rating achieved." },
-    { year: "2026", title: "10 Lakh+ Events", desc: "Now serving 7 cities across Maharashtra & Goa with 5000+ corporate clients and 10 Lakh+ events powered." },
+    { year: "2026", title: "5 Lakh+ Events", desc: "Now serving 7 cities across Maharashtra & Goa with 5000+ corporate clients and 5 Lakh+ events powered." },
   ];
 
   const certifications = [
@@ -53,9 +53,9 @@ const About = () => {
             </div>
             <div className="space-y-4">
               <span className="inline-block px-4 py-2 glass-vibrant text-primary rounded-full text-sm font-semibold border border-primary/20">Our Story</span>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900">From a Single Projector to 10 Lakh+ Events</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900">From a Single Projector to 5 Lakh+ Events</h2>
               <p className="text-gray-600 leading-relaxed">It all started 25+ years ago when our founder, frustrated by the lack of reliable AV rental options in Mumbai, decided to change the game. With just one projector and an unwavering commitment to quality, Sky Vision Multimedia was born.</p>
-              <p className="text-gray-600 leading-relaxed">Today, we're Mumbai's go-to AV rental company with an extensive inventory of LED walls, sound systems, projectors, lighting, and more. We've powered over 10 Lakh events — from intimate birthday parties to massive corporate conferences and stadium concerts.</p>
+              <p className="text-gray-600 leading-relaxed">Today, we're Mumbai's go-to AV rental company with an extensive inventory of LED walls, sound systems, projectors, lighting, and more. We've powered over 5 Lakh events — from intimate birthday parties to massive corporate conferences and stadium concerts.</p>
               <p className="text-gray-600 leading-relaxed">What hasn't changed is our core promise: premium equipment, fair pricing, and service that goes above and beyond. Every event matters to us, whether it's a 50-person seminar or a 5000-guest concert.</p>
               <div className="flex flex-wrap gap-3">
                 <a href="tel:+918655973366" className="inline-flex items-center gap-2 px-6 py-3 vibrant-gradient text-white rounded-full font-bold hover:scale-105 transition-transform"><Phone className="h-4 w-4" /> +91 86559 73366</a>

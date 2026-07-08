@@ -39,7 +39,7 @@ const InstagramFeed = () => {
             </div>
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900">@skyav.in</h2>
-              <p className="text-gray-600 text-sm md:text-base">Mumbai's #1 AV Rental Company · 10 Lakh+ Events</p>
+              <p className="text-gray-600 text-sm md:text-base">Mumbai's #1 AV Rental Company · 5 Lakh+ Events</p>
               <div className="flex items-center gap-4 mt-1 text-sm text-gray-700">
                 <span><strong className="text-gray-900">12.4K</strong> Followers</span>
                 <span><strong className="text-gray-900">850+</strong> Posts</span>

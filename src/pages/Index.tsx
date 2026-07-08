@@ -59,7 +59,7 @@ const Index = () => {
   ];
 
   const whyChooseUs = [
-    { icon: Award, title: "25+ Years Experience", desc: "Mumbai's most trusted AV rental company with 10 Lakh+ events powered" },
+    { icon: Award, title: "25+ Years Experience", desc: "Mumbai's most trusted AV rental company with 5 Lakh+ events powered" },
     { icon: Clock, title: "Same-Day Delivery", desc: "Urgent requirement? We deliver and set up within hours across Mumbai" },
     { icon: Shield, title: "Quality Guaranteed", desc: "Premium equipment with backup units and 24/7 technical support" },
     { icon: Users, title: "Expert Team", desc: "Certified AV technicians who ensure flawless event execution" },
@@ -211,7 +211,7 @@ const Index = () => {
               </h1>
 
               <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-xl">
-                LED walls, concert-grade sound, stage lighting & complete AV rentals across Mumbai, Navi Mumbai, Thane, Pune & Goa. 10 Lakh+ events powered with flawless execution and same-day setup.
+                LED walls, concert-grade sound, stage lighting & complete AV rentals across Mumbai, Navi Mumbai, Thane, Pune & Goa. 5 Lakh+ events powered with flawless execution and same-day setup.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -227,7 +227,7 @@ const Index = () => {
                 <div className="flex items-center gap-1">
                   {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 text-yellow-400 fill-yellow-400" />)}
                 </div>
-                <span className="text-sm text-gray-600 font-medium">4.9/5 · 5000+ Happy Clients</span>
+                <span className="text-sm text-gray-600 font-medium">4.8/5 · 5000+ Happy Clients</span>
               </div>
             </div>
 
@@ -250,7 +250,7 @@ const Index = () => {
 
               {/* Floating stat badges */}
               <div className="absolute -top-4 -right-4 glass-strong rounded-2xl p-4 shadow-xl animate-float">
-                <div className="text-2xl md:text-3xl font-bold text-gradient-vibrant">10 Lakh+</div>
+                <div className="text-2xl md:text-3xl font-bold text-gradient-vibrant">5 Lakh+</div>
                 <div className="text-xs text-gray-500 font-medium">Events Powered</div>
               </div>
               <div className="absolute -bottom-4 -left-4 glass-strong rounded-2xl p-4 shadow-xl animate-float-slow">
@@ -463,7 +463,7 @@ const Index = () => {
       {/* ===== NEW: Testimonials Marquee (Forward + Reverse) ===== */}
       <section className="py-16 md:py-24 relative overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading badge="Client Love" title="What Our" highlight="Clients Say" description="5000+ happy clients and a 4.9-star rating across Mumbai, Pune, and Goa." />
+          <SectionHeading badge="Client Love" title="What Our" highlight="Clients Say" description="5000+ happy clients and a 4.8-star rating across Mumbai, Pune, and Goa." />
         </div>
 
         {/* Forward marquee row */}

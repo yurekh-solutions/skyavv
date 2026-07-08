@@ -35,7 +35,7 @@ const WhyChooseUs = () => {
     {
       icon: CheckCircle,
       title: "Trusted by 1000+",
-      description: "Successfully delivered 10 Lakh+ events. Rated 4.9/5 by satisfied clients.",
+      description: "Successfully delivered 5 Lakh+ events. Rated 4.8/5 by satisfied clients.",
       color: "from-indigo-500 to-blue-500"
     }
   ];

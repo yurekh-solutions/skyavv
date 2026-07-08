@@ -3,7 +3,7 @@ export const seoConfig = {
   siteName: "Sky Vision Multimedia",
   siteUrl: "https://skyav.in",
   defaultTitle: "Sky Vision Multimedia - Professional AV Equipment Rental in Mumbai",
-  defaultDescription: "Premium Projector, LED Wall, Sound System & AV Equipment Rental in Mumbai. 25+ years experience. Serving Mumbai, Navi Mumbai, Thane, Pune. Call +91 86559 73366",
+  defaultDescription: "Premium Projector, LED Wall, Sound System & AV Equipment Rental in Mumbai. 25+ years experience. Serving Mumbai, Navi Mumbai, Thane, Pune. Call +91 86559 73366 / +91 99201 58955",
   defaultKeywords: "projector rental mumbai, LED wall rental, sound system rental, karaoke rental mumbai, AV equipment rental, event equipment rental mumbai, corporate AV rental",
   twitterHandle: "@skyavin",
   instagramHandle: "@skyav.in",
@@ -19,7 +19,7 @@ export const seoConfig = {
     "logo": "https://skyav.in/logo.png",
     "image": "https://skyav.in/og-image.jpg",
     "description": "Audio-Video Equipment Rental Company in Mumbai",
-    "telephone": "+918655973366",
+    "telephone": ["+918655973366", "+919920158955"],
     "email": "sky.av.rentals@gmail.com",
     "priceRange": "$$",
     "areaServed": ["Mumbai", "Navi Mumbai", "Thane", "Pune", "Lonavala", "Surat", "Goa"],
@@ -34,7 +34,7 @@ export const seoConfig = {
     },
     "geo": { "@type": "GeoCoordinates", "latitude": 19.2544, "longitude": 72.8622 },
     "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "150" },
-    "contactPoint": { "@type": "ContactPoint", "telephone": "+918655973366", "contactType": "Customer Service", "areaServed": ["IN"], "availableLanguage": ["English", "Hindi", "Marathi"] }
+    "contactPoint": { "@type": "ContactPoint", "telephone": ["+918655973366", "+919920158955"], "contactType": "Customer Service", "areaServed": ["IN"], "availableLanguage": ["English", "Hindi", "Marathi"] }
   },
   localBusiness: {
     "@context": "https://schema.org",
@@ -45,7 +45,7 @@ export const seoConfig = {
     "address": { "@type": "PostalAddress", "streetAddress": "Room No 951, Nayagaon Near Maharashtra Hotel, Laxman Mahatre Road", "addressLocality": "Dahisar West", "addressRegion": "Mumbai", "postalCode": "400068", "addressCountry": "IN" },
     "geo": { "@type": "GeoCoordinates", "latitude": 19.2544, "longitude": 72.8622 },
     "url": "https://skyav.in",
-    "telephone": "+918655973366",
+    "telephone": ["+918655973366", "+919920158955"],
     "email": "sky.av.rentals@gmail.com",
     "priceRange": "$$",
     "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "opens": "09:00", "closes": "21:00" }]
@@ -57,17 +57,17 @@ export const pageSEO: Record<string, { title: string; description: string; keywo
   // Core pages
   home: {
     title: "AV Equipment Rental Mumbai | LED Wall, Projector, Sound System | Sky Vision",
-    description: "Mumbai's #1 AV equipment rental company. LED wall rental, projector rental, sound system rental, stage lighting & more. 10 Lakh+ events powered. Free delivery & setup. Call +91 86559 73366.",
+    description: "Mumbai's #1 AV equipment rental company. LED wall rental, projector rental, sound system rental, stage lighting & more. 5 Lakh+ events powered. Free delivery & setup. Call +91 86559 73366 / +91 99201 58955.",
     keywords: "AV equipment rental Mumbai, LED wall rental Mumbai, projector rental Mumbai, sound system rental, stage lighting rental, event equipment rental, corporate AV rental, wedding AV Mumbai"
   },
   about: {
     title: "About Sky Vision Multimedia | 25+ Years AV Rental Expertise in Mumbai",
-    description: "Learn about Sky Vision Multimedia — Mumbai's trusted AV equipment rental company with 25+ years experience. 10 Lakh+ events powered, 5000+ happy clients, 4.9-star rating. Expert team & premium equipment.",
+    description: "Learn about Sky Vision Multimedia — Mumbai's trusted AV equipment rental company with 25+ years experience. 5 Lakh+ events powered, 5000+ happy clients, 4.8-star rating. Expert team & premium equipment.",
     keywords: "about sky vision, AV rental company Mumbai, event technology Mumbai, AV equipment provider, multimedia company Mumbai"
   },
   contact: {
     title: "Contact Sky Vision Multimedia | Get Instant AV Rental Quote",
-    description: "Contact Sky Vision Multimedia for AV equipment rental in Mumbai. Call +91 86559 73366 or email sky.av.rentals@gmail.com. Free quotes, same-day delivery across Mumbai, Navi Mumbai, Thane, Pune.",
+    description: "Contact Sky Vision Multimedia for AV equipment rental in Mumbai. Call +91 86559 73366 / +91 99201 58955 or email sky.av.rentals@gmail.com. Free quotes, same-day delivery across Mumbai, Navi Mumbai, Thane, Pune.",
     keywords: "contact AV rental Mumbai, get quote, AV rental enquiry, book LED wall, projector rental contact, sound system booking Mumbai"
   },
   quote: {
@@ -82,7 +82,7 @@ export const pageSEO: Record<string, { title: string; description: string; keywo
   },
   gallery: {
     title: "Event Gallery | AV Setup Photos & Videos | Sky Vision Mumbai",
-    description: "Browse our portfolio of 10 Lakh+ events — weddings, corporate events, concerts, exhibitions. See LED walls, sound systems, and lighting setups in action across Mumbai, Pune, Goa.",
+    description: "Browse our portfolio of 5 Lakh+ events — weddings, corporate events, concerts, exhibitions. See LED walls, sound systems, and lighting setups in action across Mumbai, Pune, Goa.",
     keywords: "event gallery Mumbai, AV setup photos, LED wall photos, event portfolio, wedding AV photos, corporate event gallery"
   },
   videos: {
@@ -124,7 +124,7 @@ export const pageSEO: Record<string, { title: string; description: string; keywo
   },
   "services/led-wall-rental": {
     title: "LED Wall Rental Mumbai | Indoor & Outdoor LED Screens | Sky Vision",
-    description: "Premium LED wall rental in Mumbai. P2.5 & P3.9 LED screens for indoor and outdoor events. High brightness, seamless displays, free setup. Sizes from 6ft to 20ft. Call +91 86559 73366.",
+    description: "Premium LED wall rental in Mumbai. P2.5 & P3.9 LED screens for indoor and outdoor events. High brightness, seamless displays, free setup. Sizes from 6ft to 20ft. Call +91 86559 73366 / +91 99201 58955.",
     keywords: "LED wall rental Mumbai, LED screen rental, P2.5 LED wall, P3.9 LED wall, indoor LED display, outdoor LED screen, LED video wall hire"
   },
   "services/indoor-led-wall": {
@@ -263,37 +263,37 @@ export const pageSEO: Record<string, { title: string; description: string; keywo
   // Location pages
   "locations/mumbai": {
     title: "AV Equipment Rental Mumbai | LED Wall, Sound, Projector | Sky Vision",
-    description: "AV equipment rental in Mumbai — LED walls, projectors, sound systems, lighting across all Mumbai areas. Andheri, Bandra, BKC, Juhu, South Mumbai, Dahisar. Free delivery. Call +91 86559 73366.",
+    description: "AV equipment rental in Mumbai — LED walls, projectors, sound systems, lighting across all Mumbai areas. Andheri, Bandra, BKC, Juhu, South Mumbai, Dahisar. Free delivery. Call +91 86559 73366 / +91 99201 58955.",
     keywords: "AV rental Mumbai, LED wall rental Mumbai, projector rental Mumbai, sound system Mumbai, event equipment Mumbai, AV hire Andheri, Bandra AV rental, BKC event equipment"
   },
   "locations/navi-mumbai": {
     title: "AV Equipment Rental Navi Mumbai | LED Wall, Sound, Projector",
-    description: "AV equipment rental in Navi Mumbai — Vashi, Nerul, Belapur, Kharghar, Panvel. LED walls, sound systems, projectors, lighting. Free delivery & setup. Call +91 86559 73366.",
+    description: "AV equipment rental in Navi Mumbai — Vashi, Nerul, Belapur, Kharghar, Panvel. LED walls, sound systems, projectors, lighting. Free delivery & setup. Call +91 86559 73366 / +91 99201 58955.",
     keywords: "AV rental Navi Mumbai, LED wall Vashi, sound system Nerul, projector Belapur, event equipment Kharghar, Panvel AV rental, Navi Mumbai event equipment"
   },
   "locations/thane": {
     title: "AV Equipment Rental Thane | LED Wall, Sound, Projector | Sky Vision",
-    description: "AV equipment rental in Thane — LED walls, projectors, sound systems, stage lighting. Covering Thane West, East, Ghodbunder, Majiwada, Kolshet. Free delivery. Call +91 86559 73366.",
+    description: "AV equipment rental in Thane — LED walls, projectors, sound systems, stage lighting. Covering Thane West, East, Ghodbunder, Majiwada, Kolshet. Free delivery. Call +91 86559 73366 / +91 99201 58955.",
     keywords: "AV rental Thane, LED wall Thane, sound system Thane, projector Thane, event equipment Thane, Thane West AV, Majiwada event equipment"
   },
   "locations/pune": {
     title: "AV Equipment Rental Pune | LED Wall, Sound, Projector | Sky Vision",
-    description: "AV equipment rental in Pune — LED walls, sound systems, projectors, lighting. Covering Hinjewadi, Koregaon Park, Kharadi, Baner, Viman Nagar. Professional setup. Call +91 86559 73366.",
+    description: "AV equipment rental in Pune — LED walls, sound systems, projectors, lighting. Covering Hinjewadi, Koregaon Park, Kharadi, Baner, Viman Nagar. Professional setup. Call +91 86559 73366 / +91 99201 58955.",
     keywords: "AV rental Pune, LED wall Pune, sound system Pune, projector Pune, event equipment Pune, Hinjewadi AV, Koregaon Park event, Kharadi AV rental"
   },
   "locations/lonavala": {
     title: "AV Equipment Rental Lonavala | Event AV for Resorts & Weddings",
-    description: "AV equipment rental in Lonavala — LED walls, sound systems, projectors, lighting for destination weddings, resort events, corporate offsites. Free delivery from Mumbai. Call +91 86559 73366.",
+    description: "AV equipment rental in Lonavala — LED walls, sound systems, projectors, lighting for destination weddings, resort events, corporate offsites. Free delivery from Mumbai. Call +91 86559 73366 / +91 99201 58955.",
     keywords: "AV rental Lonavala, LED wall Lonavala, destination wedding AV Lonavala, resort event equipment, Lonavala sound system, corporate offsite AV Lonavala"
   },
   "locations/surat": {
     title: "AV Equipment Rental Surat | LED Wall, Sound, Projector | Sky Vision",
-    description: "AV equipment rental in Surat — LED walls, sound systems, projectors, stage lighting for weddings, corporate events, exhibitions. Professional delivery & setup. Call +91 86559 73366.",
+    description: "AV equipment rental in Surat — LED walls, sound systems, projectors, stage lighting for weddings, corporate events, exhibitions. Professional delivery & setup. Call +91 86559 73366 / +91 99201 58955.",
     keywords: "AV rental Surat, LED wall Surat, sound system Surat, projector Surat, event equipment Surat, Surat wedding AV, Surat corporate event"
   },
   "locations/goa": {
     title: "AV Equipment Rental Goa | Destination Wedding & Event AV | Sky Vision",
-    description: "AV equipment rental in Goa — LED walls, sound systems, projectors, lighting for destination weddings, beach parties, corporate offsites, music festivals. Professional setup. Call +91 86559 73366.",
+    description: "AV equipment rental in Goa — LED walls, sound systems, projectors, lighting for destination weddings, beach parties, corporate offsites, music festivals. Professional setup. Call +91 86559 73366 / +91 99201 58955.",
     keywords: "AV rental Goa, LED wall Goa, destination wedding AV Goa, beach party sound, Goa event equipment, Goa wedding lighting, Goa corporate offsite"
   },
 

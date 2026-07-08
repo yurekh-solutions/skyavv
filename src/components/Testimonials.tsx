@@ -53,7 +53,7 @@ const Testimonials = () => {
     "name": "Sky Vision Multimedia",
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "4.9",
+      "ratingValue": "4.8",
       "reviewCount": "1000",
       "bestRating": "5",
       "worstRating": "1"
@@ -146,11 +146,11 @@ const Testimonials = () => {
               <p className="text-xs md:text-sm text-gray-600 font-medium">Happy Clients</p>
             </div>
             <div className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-white/40">
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">10 Lakh+</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">5 Lakh+</div>
               <p className="text-xs md:text-sm text-gray-600 font-medium">Events Covered</p>
             </div>
             <div className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-white/40">
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">4.9/5</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">4.8/5</div>
               <p className="text-xs md:text-sm text-gray-600 font-medium">Average Rating</p>
             </div>
             <div className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-white/40">

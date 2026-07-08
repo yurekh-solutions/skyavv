@@ -10,9 +10,9 @@ interface StatsBarProps {
 
 const defaultStats: StatItem[] = [
   { value: 25, suffix: "+", label: "Years Experience" },
-  { value: "10 Lakh+", label: "Events Powered" },
+  { value: "5 Lakh+", label: "Events Powered" },
   { value: 5000, suffix: "+", label: "Happy Clients" },
-  { value: 4.9, suffix: "★", label: "Average Rating" },
+  { value: 4.8, suffix: "★", label: "Average Rating" },
 ];
 
 const StatsBar = ({ stats = defaultStats }: StatsBarProps) => {
