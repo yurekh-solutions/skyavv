@@ -36,7 +36,7 @@ const Features = () => {
     {
       icon: ThumbsUp,
       title: "Affordable Prices",
-      description: "Get the best quality equipment at competitive prices. Free quotes and flexible rental packages available.",
+      description: "Get the best quality equipment at competitive prices. Instant quotes and flexible rental packages available.",
       color: "from-indigo-500 to-purple-500"
     }
   ];

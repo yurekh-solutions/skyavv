@@ -22,11 +22,11 @@ const Hero = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 z-10 w-full">
         <div className="max-w-4xl animate-fade-in">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 md:mb-6 leading-tight">
-            Transform Your Events with
-            <span className="block text-primary mt-2">Premium LED & AV Solutions</span>
+            Spectacular Events
+            <span className="block text-primary mt-2">Start with Premium AV</span>
           </h1>
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-6 md:mb-8 leading-relaxed">
-            Mumbai's leading event technology partner. Spectacular LED walls, concert-grade sound, and complete AV solutions for unforgettable experiences.
+            LED walls, concert-grade sound, stage lighting & complete AV rentals across Mumbai, Navi Mumbai, Thane, Pune & Goa. 5 Lakh+ events powered with flawless execution and same-day setup.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-6 md:mb-8">
@@ -53,7 +53,7 @@ const Hero = () => {
               className="text-base md:text-lg px-6 md:px-8 py-5 md:py-6 gap-2 bg-white hover:bg-white/90"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Get Free Quote
+              Get Instant Quote
               <ArrowRight className="h-4 w-4 md:h-5 md:h-5" />
             </Button>
           </div>

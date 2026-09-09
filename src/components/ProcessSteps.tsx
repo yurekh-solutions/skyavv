@@ -20,7 +20,7 @@ const ProcessSteps = () => {
       icon: Truck,
       number: "03",
       title: "Delivery",
-      description: "We deliver equipment to your venue on time. Free delivery in Mumbai.",
+      description: "We deliver equipment to your venue on time. Included delivery in Mumbai.",
       color: "from-orange-500 to-red-500"
     },
     {

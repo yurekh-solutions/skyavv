@@ -97,7 +97,7 @@ const WhyChooseUs = () => {
           <div className="inline-flex flex-col sm:flex-row gap-4 items-center justify-center bg-gradient-to-r from-primary to-blue-600 rounded-2xl p-6 md:p-8 text-white shadow-2xl">
             <div className="text-left">
               <h3 className="text-xl md:text-2xl font-bold mb-2">Ready to Make Your Event Spectacular?</h3>
-              <p className="text-white/90">Get instant quote or call us now for free consultation</p>
+              <p className="text-white/90">Get instant quote or call us now for expert consultation</p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3">
               <a

@@ -57,7 +57,7 @@ export const pageSEO: Record<string, { title: string; description: string; keywo
   // Core pages
   home: {
     title: "AV Equipment Rental Mumbai | LED Wall, Projector, Sound System | Sky Vision",
-    description: "Mumbai's #1 AV equipment rental company. LED wall rental, projector rental, sound system rental, stage lighting & more. 5 Lakh+ events powered. Free delivery & setup. Call +91 86559 73366 / +91 99201 58955.",
+    description: "Mumbai's #1 AV equipment rental company. LED wall rental, projector rental, sound system rental, stage lighting & more. 5 Lakh+ events powered. Included delivery & setup. Call +91 86559 73366 / +91 99201 58955.",
     keywords: "AV equipment rental Mumbai, LED wall rental Mumbai, projector rental Mumbai, sound system rental, stage lighting rental, event equipment rental, corporate AV rental, wedding AV Mumbai"
   },
   about: {
@@ -67,12 +67,12 @@ export const pageSEO: Record<string, { title: string; description: string; keywo
   },
   contact: {
     title: "Contact Sky Vision Multimedia | Get Instant AV Rental Quote",
-    description: "Contact Sky Vision Multimedia for AV equipment rental in Mumbai. Call +91 86559 73366 / +91 99201 58955 or email sky.av.rentals@gmail.com. Free quotes, same-day delivery across Mumbai, Navi Mumbai, Thane, Pune.",
+    description: "Contact Sky Vision Multimedia for AV equipment rental in Mumbai. Call +91 86559 73366 / +91 99201 58955 or email sky.av.rentals@gmail.com. Instant quotes, same-day delivery across Mumbai, Navi Mumbai, Thane, Pune.",
     keywords: "contact AV rental Mumbai, get quote, AV rental enquiry, book LED wall, projector rental contact, sound system booking Mumbai"
   },
   quote: {
-    title: "Get a Free AV Equipment Rental Quote | Sky Vision Multimedia",
-    description: "Request a free, no-obligation quote for LED wall, projector, sound system, and AV equipment rental in Mumbai. Fast response, competitive pricing, same-day delivery available.",
+    title: "Get an Instant AV Equipment Rental Quote | Sky Vision Multimedia",
+    description: "Request a no-obligation quote for LED wall, projector, sound system, and AV equipment rental in Mumbai. Fast response, competitive pricing, same-day delivery available.",
     keywords: "AV rental quote Mumbai, LED wall quote, projector rental price, sound system rental cost, event equipment quote"
   },
   faq: {
@@ -119,12 +119,12 @@ export const pageSEO: Record<string, { title: string; description: string; keywo
   // Service pages
   services: {
     title: "AV Equipment Rental Services Mumbai | Complete AV Solutions",
-    description: "Complete AV equipment rental services in Mumbai — LED walls, projectors, sound systems, stage lighting, photography, karaoke, DJ equipment, live streaming & more. Free delivery & setup.",
+    description: "Complete AV equipment rental services in Mumbai — LED walls, projectors, sound systems, stage lighting, photography, karaoke, DJ equipment, live streaming & more. Included delivery & setup.",
     keywords: "AV services Mumbai, LED wall rental services, projector rental, sound system rental, stage lighting, event AV services, corporate AV solutions"
   },
   "services/led-wall-rental": {
     title: "LED Wall Rental Mumbai | Indoor & Outdoor LED Screens | Sky Vision",
-    description: "Premium LED wall rental in Mumbai. P2.5 & P3.9 LED screens for indoor and outdoor events. High brightness, seamless displays, free setup. Sizes from 6ft to 20ft. Call +91 86559 73366 / +91 99201 58955.",
+    description: "Premium LED wall rental in Mumbai. P2.5 & P3.9 LED screens for indoor and outdoor events. High brightness, seamless displays, included setup. Sizes from 6ft to 20ft. Call +91 86559 73366 / +91 99201 58955.",
     keywords: "LED wall rental Mumbai, LED screen rental, P2.5 LED wall, P3.9 LED wall, indoor LED display, outdoor LED screen, LED video wall hire"
   },
   "services/indoor-led-wall": {
@@ -134,7 +134,7 @@ export const pageSEO: Record<string, { title: string; description: string; keywo
   },
   "services/outdoor-led-wall": {
     title: "Outdoor LED Wall Rental Mumbai | Weatherproof LED Screens 6000 Nits",
-    description: "Outdoor LED wall rental in Mumbai. 6000+ nits brightness, IP65 weatherproof, for concerts, festivals, sports. Sizes up to 40ft. Free delivery & setup across Maharashtra.",
+    description: "Outdoor LED wall rental in Mumbai. 6000+ nits brightness, IP65 weatherproof, for concerts, festivals, sports. Sizes up to 40ft. Included delivery & setup across Maharashtra.",
     keywords: "outdoor LED wall Mumbai, weatherproof LED screen, high brightness LED, concert LED wall, festival LED display, outdoor video wall rental"
   },
   "services/projector-rental": {
@@ -149,7 +149,7 @@ export const pageSEO: Record<string, { title: string; description: string; keywo
   },
   "services/sound-system-rental": {
     title: "Sound System Rental Mumbai | Concert-Grade Audio | Sky Vision",
-    description: "Professional sound system rental in Mumbai. JBL, Bose, Yamaha speakers, wireless mics, mixers, line arrays. For weddings, concerts, corporate events. Crystal-clear sound. Free setup.",
+    description: "Professional sound system rental in Mumbai. JBL, Bose, Yamaha speakers, wireless mics, mixers, line arrays. For weddings, concerts, corporate events. Crystal-clear sound. Included setup.",
     keywords: "sound system rental Mumbai, PA system hire, speaker rental, JBL speakers, wireless microphone rental, line array rental, concert sound system, wedding sound system"
   },
   "services/stage-lighting-rental": {
@@ -169,7 +169,7 @@ export const pageSEO: Record<string, { title: string; description: string; keywo
   },
   "services/pa-system-rental": {
     title: "PA System Rental Mumbai | Public Address Systems | Sky Vision",
-    description: "PA system rental in Mumbai for conferences, seminars, corporate meetings, public events. Wireless mics, speakers, mixers, stands. Clear, reliable audio. Free delivery & setup.",
+    description: "PA system rental in Mumbai for conferences, seminars, corporate meetings, public events. Wireless mics, speakers, mixers, stands. Clear, reliable audio. Included delivery & setup.",
     keywords: "PA system rental Mumbai, public address system, conference audio, seminar sound system, meeting microphone rental, corporate PA system"
   },
   "services/dj-equipment-rental": {
@@ -263,17 +263,17 @@ export const pageSEO: Record<string, { title: string; description: string; keywo
   // Location pages
   "locations/mumbai": {
     title: "AV Equipment Rental Mumbai | LED Wall, Sound, Projector | Sky Vision",
-    description: "AV equipment rental in Mumbai — LED walls, projectors, sound systems, lighting across all Mumbai areas. Andheri, Bandra, BKC, Juhu, South Mumbai, Dahisar. Free delivery. Call +91 86559 73366 / +91 99201 58955.",
+    description: "AV equipment rental in Mumbai — LED walls, projectors, sound systems, lighting across all Mumbai areas. Andheri, Bandra, BKC, Juhu, South Mumbai, Dahisar. Included delivery. Call +91 86559 73366 / +91 99201 58955.",
     keywords: "AV rental Mumbai, LED wall rental Mumbai, projector rental Mumbai, sound system Mumbai, event equipment Mumbai, AV hire Andheri, Bandra AV rental, BKC event equipment"
   },
   "locations/navi-mumbai": {
     title: "AV Equipment Rental Navi Mumbai | LED Wall, Sound, Projector",
-    description: "AV equipment rental in Navi Mumbai — Vashi, Nerul, Belapur, Kharghar, Panvel. LED walls, sound systems, projectors, lighting. Free delivery & setup. Call +91 86559 73366 / +91 99201 58955.",
+    description: "AV equipment rental in Navi Mumbai — Vashi, Nerul, Belapur, Kharghar, Panvel. LED walls, sound systems, projectors, lighting. Included delivery & setup. Call +91 86559 73366 / +91 99201 58955.",
     keywords: "AV rental Navi Mumbai, LED wall Vashi, sound system Nerul, projector Belapur, event equipment Kharghar, Panvel AV rental, Navi Mumbai event equipment"
   },
   "locations/thane": {
     title: "AV Equipment Rental Thane | LED Wall, Sound, Projector | Sky Vision",
-    description: "AV equipment rental in Thane — LED walls, projectors, sound systems, stage lighting. Covering Thane West, East, Ghodbunder, Majiwada, Kolshet. Free delivery. Call +91 86559 73366 / +91 99201 58955.",
+    description: "AV equipment rental in Thane — LED walls, projectors, sound systems, stage lighting. Covering Thane West, East, Ghodbunder, Majiwada, Kolshet. Included delivery. Call +91 86559 73366 / +91 99201 58955.",
     keywords: "AV rental Thane, LED wall Thane, sound system Thane, projector Thane, event equipment Thane, Thane West AV, Majiwada event equipment"
   },
   "locations/pune": {
@@ -283,7 +283,7 @@ export const pageSEO: Record<string, { title: string; description: string; keywo
   },
   "locations/lonavala": {
     title: "AV Equipment Rental Lonavala | Event AV for Resorts & Weddings",
-    description: "AV equipment rental in Lonavala — LED walls, sound systems, projectors, lighting for destination weddings, resort events, corporate offsites. Free delivery from Mumbai. Call +91 86559 73366 / +91 99201 58955.",
+    description: "AV equipment rental in Lonavala — LED walls, sound systems, projectors, lighting for destination weddings, resort events, corporate offsites. Included delivery from Mumbai. Call +91 86559 73366 / +91 99201 58955.",
     keywords: "AV rental Lonavala, LED wall Lonavala, destination wedding AV Lonavala, resort event equipment, Lonavala sound system, corporate offsite AV Lonavala"
   },
   "locations/surat": {
@@ -310,7 +310,7 @@ export const pageSEO: Record<string, { title: string; description: string; keywo
   },
   "blog/event-av-planning-guide": {
     title: "Event AV Planning Guide | Complete Checklist | Sky Vision Mumbai",
-    description: "Complete event AV planning guide — equipment checklist, timeline, venue requirements, budgeting, technical specs. Plan your event audio-visual like a pro. Free checklist included.",
+    description: "Complete event AV planning guide — equipment checklist, timeline, venue requirements, budgeting, technical specs. Plan your event audio-visual like a pro. Checklist included.",
     keywords: "event AV planning, AV checklist, event equipment planning, audio visual guide, event production checklist, AV budget guide, event tech planning"
   },
   "blog/led-wall-pricing-guide": {
@@ -322,5 +322,30 @@ export const pageSEO: Record<string, { title: string; description: string; keywo
     title: "Sound System Setup Guide for Events | Expert Tips | Sky Vision",
     description: "Complete sound system setup guide — speaker placement, microphone setup, mixer basics, acoustics, troubleshooting. Get crystal-clear sound at your event. Expert tips included.",
     keywords: "sound system setup guide, speaker placement, microphone setup, PA system guide, event sound setup, audio mixing guide, sound system troubleshooting"
+  },
+  "blog/corporate-event-av-guide": {
+    title: "Corporate Event AV Equipment Guide | Complete Checklist | Sky Vision",
+    description: "Complete guide to AV equipment for corporate events in Mumbai — LED walls, sound systems, lighting, live streaming, conferencing. Budget breakdown, venue tips, and checklist included.",
+    keywords: "corporate event AV guide, corporate event equipment checklist, conference AV setup Mumbai, corporate event planning guide, AV equipment for corporate events"
+  },
+  "blog/wedding-av-planning-guide": {
+    title: "Wedding AV Planning Guide | LED, Sound & Lighting | Sky Vision Mumbai",
+    description: "Plan the perfect wedding AV in Mumbai — LED backdrops, sound systems, stage lighting, live streaming for mandap, sangeet, and reception. Budget guide and checklist included.",
+    keywords: "wedding AV planning guide, wedding LED wall Mumbai, wedding sound system, wedding stage lighting, sangeet AV setup, mandap LED backdrop, wedding audio visual"
+  },
+  "blog/stage-lighting-guide": {
+    title: "Stage Lighting Guide for Events | Types & Setup Tips | Sky Vision",
+    description: "Everything about stage lighting for events — LED par cans, moving heads, spotlights, lasers, haze machines. Setup by event type, DMX control explained, Mumbai pricing.",
+    keywords: "stage lighting guide, event lighting types, LED par cans, moving heads, stage lighting setup, DMX control, event lighting rental Mumbai"
+  },
+  "blog/av-rental-mistakes": {
+    title: "10 Costly AV Rental Mistakes to Avoid | Expert Guide | Sky Vision",
+    description: "Top 10 costly AV rental mistakes people make — wrong equipment, late booking, no backups, poor content — and exactly how to avoid every one. Based on 5 Lakh+ events.",
+    keywords: "AV rental mistakes, event AV errors, AV equipment rental tips, avoid AV mistakes, event planning mistakes, AV rental guide Mumbai"
+  },
+  "blog/indoor-vs-outdoor-led-wall": {
+    title: "Indoor vs Outdoor LED Wall | Complete Comparison Guide | Sky Vision",
+    description: "Indoor vs outdoor LED walls compared — brightness, pixel pitch, weatherproofing, pricing, and best use cases. Expert guide from Mumbai's most experienced LED provider.",
+    keywords: "indoor vs outdoor LED wall, LED wall comparison, indoor LED screen, outdoor LED screen, LED wall brightness, LED wall pixel pitch, LED wall pricing Mumbai"
   },
 };

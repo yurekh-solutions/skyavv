@@ -18,14 +18,14 @@ const CTASection = ({ title, description }: CTASectionProps) => {
           {title || "Ready to Make Your Event Spectacular?"}
         </h2>
         <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-8 leading-relaxed">
-          {description || "Get a free quote within 30 minutes. Free delivery, setup & technical support across Mumbai."}
+          {description || "Get a quote within 30 minutes. Included delivery, setup & technical support across Mumbai."}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             to="/quote"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-primary rounded-full font-bold text-lg shadow-2xl hover:scale-105 transition-transform"
           >
-            Get Free Quote <ArrowRight className="h-5 w-5" />
+            Get Instant Quote <ArrowRight className="h-5 w-5" />
           </Link>
           <a
             href="tel:+918655973366"

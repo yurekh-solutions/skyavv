@@ -8,7 +8,7 @@ const FAQ = () => {
   const faqs = [
     {
       question: "What areas do you serve in Mumbai?",
-      answer: "We provide AV equipment rental services across Mumbai, Navi Mumbai, Thane, Pune, Lonavala, Surat, and Goa. We offer free delivery and setup within Mumbai city limits and competitive rates for outstation events.",
+      answer: "We provide AV equipment rental services across Mumbai, Navi Mumbai, Thane, Pune, Lonavala, Surat, and Goa. We offer included delivery and setup within Mumbai city limits and competitive rates for outstation events.",
     },
     {
       question: "How far in advance should I book equipment?",

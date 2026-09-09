@@ -4,6 +4,9 @@ import SEO from "@/components/SEO";
 import PageHero from "@/components/shared/PageHero";
 import SectionHeading from "@/components/shared/SectionHeading";
 import CTASection from "@/components/shared/CTASection";
+import FAQAccordion from "@/components/shared/FAQAccordion";
+import type { FAQItem } from "@/components/shared/FAQAccordion";
+import { pageSEO } from "@/config/seo";
 
 export default function Quote() {
   const [formData, setFormData] = useState({
@@ -11,6 +14,15 @@ export default function Quote() {
     equipment: "", venue: "", message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+
+  const quoteFaqs: FAQItem[] = [
+    { category: "Quote Process", question: "How fast will I receive my AV rental quote?", answer: "We respond to every quote request within 30 minutes during business hours (9am-9pm, Monday to Sunday). For urgent same-day requirements, call us directly at +91 86559 73366 for an instant quote." },
+    { category: "Quote Process", question: "Is the quote request binding? Do I have to pay anything?", answer: "No, a quote request is completely non-binding. We provide transparent, all-inclusive pricing with no hidden charges. You only pay the 50% advance if you decide to confirm your booking." },
+    { category: "Pricing", question: "What information should I include for an accurate quote?", answer: "For the most accurate quote, include your event type, date, venue location, expected guest count, and the equipment you need (LED wall, sound system, lighting, etc.). Our form above captures all of this." },
+    { category: "Pricing", question: "How much does AV equipment rental cost in Mumbai?", answer: "LED walls start from Rs. 15,000 per day, projectors from Rs. 2,500 per day, sound systems from Rs. 5,000 per day, and stage lighting from Rs. 8,000 per day. All packages include delivery, setup, and technical support. Bundle discounts apply for multiple equipment." },
+    { category: "Booking", question: "Can I get a same-day quote and delivery?", answer: "Yes, we provide same-day quotes within 30 minutes and same-day delivery across Mumbai, Navi Mumbai, and Thane subject to equipment availability. Call +91 86559 73366 early for the best availability." },
+    { category: "Payment", question: "What payment methods do you accept?", answer: "We accept UPI, bank transfer, cash, and all major credit/debit cards. A 50% advance payment confirms your booking, with the balance due on or before the event day. GST invoices are provided for all transactions." },
+  ];
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -24,14 +36,16 @@ export default function Quote() {
   return (
     <>
       <SEO
-        title="quote"
-        description="quote"
-        keywords="quote"
+        title={pageSEO.quote.title}
+        description={pageSEO.quote.description}
+        keywords={pageSEO.quote.keywords}
         url="https://skyav.in/quote"
+        faqSchema={quoteFaqs.map((f) => ({ question: f.question, answer: f.answer }))}
+        breadcrumbs={[{ label: "Home", path: "/" }, { label: "Get a Quote", path: "/quote" }]}
       />
 
       <PageHero
-        title="Get a Free"
+        title="Get an Instant"
         highlight="Quote"
         description="Tell us about your event and get a customized quote within 30 minutes. No obligations, no hidden charges — just transparent pricing for premium AV equipment."
         breadcrumbs={[{ label: "Get a Quote" }]}
@@ -68,7 +82,7 @@ export default function Quote() {
       <section className="py-12 md:py-16 mesh-bg-soft">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
-            <SectionHeading badge="Free Quote" title="Request a" highlight="Custom Quote" description="Fill in your event details and we'll get back to you with a detailed quote." />
+            <SectionHeading badge="Instant Quote" title="Request a" highlight="Custom Quote" description="Fill in your event details and we'll get back to you with a detailed quote." />
 
             {submitted ? (
               <div className="glass-card rounded-3xl p-10 text-center">
@@ -129,6 +143,14 @@ export default function Quote() {
               </form>
             )}
           </div>
+        </div>
+      </section>
+
+      {/* FAQ Section — AEO/GEO */}
+      <section className="py-12 md:py-16">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeading badge="FAQ" title="Quote &" highlight="Pricing Questions" description="Everything you need to know about getting a quote, pricing, and booking AV equipment in Mumbai." />
+          <FAQAccordion items={quoteFaqs} showCategories={true} showSearch={false} />
         </div>
       </section>
 

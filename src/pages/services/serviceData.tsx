@@ -21,7 +21,7 @@ import setupImg from "@/assets/setup.png";
 
 const sharedFaqs = (topic: string): FAQItem[] => [
   { category: "Pricing", question: `How much does ${topic} cost?`, answer: "Rates vary by size, duration, and event type. Contact us with your requirements for a custom quote within 30 minutes. Delivery, setup, and technical support are always included." },
-  { category: "Delivery", question: "Do you deliver across Mumbai?", answer: "Yes! We offer free delivery and setup across Mumbai city limits. We also serve Navi Mumbai, Thane, Pune, Lonavala, Surat, and Goa with competitive outstation rates." },
+  { category: "Delivery", question: "Do you deliver across Mumbai?", answer: "Yes! We offer included delivery and setup across Mumbai city limits. We also serve Navi Mumbai, Thane, Pune, Lonavala, Surat, and Goa with competitive outstation rates." },
   { category: "Support", question: "Is technical support included?", answer: "Absolutely. Every rental includes professional on-site technicians who handle setup, operation during your event, and breakdown — all at no extra cost." },
   { category: "Booking", question: "How far in advance should I book?", answer: "We recommend 7-10 days for peak season (Oct-Mar) and 3-5 days for regular bookings. Same-day bookings are available subject to equipment availability." },
 ];
@@ -98,9 +98,9 @@ const ledWallTabs: TabItem[] = [
 ];
 
 export const ledWallData: ServicePageData = {
-  seoKey: "ledWall", url: "/services/led-wall-rental",
+  seoKey: "services/led-wall-rental", url: "/services/led-wall-rental",
   pageTitle: "LED Wall", pageHighlight: "Rental",
-  description: "P2.5 & P3.9 LED screens with 6000+ nits brightness. Indoor & outdoor options from 6ft to 40ft. Free delivery & setup in Mumbai.",
+  description: "P2.5 & P3.9 LED screens with 6000+ nits brightness. Indoor & outdoor options from 6ft to 40ft. Included delivery & setup in Mumbai.",
   heroImage: ledWallImg,
   overview: "Our LED walls deliver stunning visual impact for any event. From intimate conferences to massive outdoor concerts, we provide pixel-perfect displays with brightness that cuts through any lighting condition.",
   features: [
@@ -133,7 +133,7 @@ export const ledWallData: ServicePageData = {
   relatedServices: relatedSvcs("LED Wall Rental"),
 };
 
-export const indoorLedData = makeService("indoorLed", "/services/indoor-led-wall", "Indoor LED Wall", "Rental", "Fine pixel pitch P2.5 LED walls perfect for indoor events. Crystal-clear visuals for conferences, weddings & corporate gatherings.", ledWallImg, "Our indoor LED walls feature ultra-fine pixel pitch technology for stunning visual clarity at close viewing distances.", [
+export const indoorLedData = makeService("services/indoor-led-wall", "/services/indoor-led-wall", "Indoor LED Wall", "Rental", "Fine pixel pitch P2.5 LED walls perfect for indoor events. Crystal-clear visuals for conferences, weddings & corporate gatherings.", ledWallImg, "Our indoor LED walls feature ultra-fine pixel pitch technology for stunning visual clarity at close viewing distances.", [
   { icon: "CheckCircle2", title: "Ultra Fine Pitch", desc: "P2.5 pixel pitch for razor-sharp images at close range" },
   { icon: "CheckCircle2", title: "Lightweight Panels", desc: "Easy to install without structural modifications" },
   { icon: "CheckCircle2", title: "Silent Operation", desc: "Fanless design for noise-free environments" },
@@ -151,7 +151,7 @@ export const indoorLedData = makeService("indoorLed", "/services/indoor-led-wall
   { size: "Grand", spec: "20ft × 12ft P2.5", price: "Rs. 55,000" },
 ]);
 
-export const outdoorLedData = makeService("outdoorLed", "/services/outdoor-led-wall", "Outdoor LED Wall", "Rental", "High-brightness P3.9 LED walls with 6000+ nits for outdoor events. IP65 rated for rain and dust protection.", tv3, "Our outdoor LED walls are built to perform in the harshest conditions with 6000+ nits brightness and IP65 weatherproofing.", [
+export const outdoorLedData = makeService("services/outdoor-led-wall", "/services/outdoor-led-wall", "Outdoor LED Wall", "Rental", "High-brightness P3.9 LED walls with 6000+ nits for outdoor events. IP65 rated for rain and dust protection.", tv3, "Our outdoor LED walls are built to perform in the harshest conditions with 6000+ nits brightness and IP65 weatherproofing.", [
   { icon: "CheckCircle2", title: "Sunlight Readable", desc: "6000+ nits brightness visible even in direct sunlight" },
   { icon: "CheckCircle2", title: "Weatherproof", desc: "IP65 rated — works in rain, dust, and humidity" },
   { icon: "CheckCircle2", title: "Robust Build", desc: "Die-cast aluminum cabinets withstand outdoor conditions" },
@@ -169,7 +169,7 @@ export const outdoorLedData = makeService("outdoorLed", "/services/outdoor-led-w
   { size: "XXL", spec: "40ft × 20ft P3.9", price: "Rs. 1,20,000" },
 ]);
 
-export const projectorData = makeService("projector", "/services/projector-rental", "Projector", "Rental", "HD & 4K projectors with motorized screens. Perfect for presentations, training sessions & small events.", projectorImg, "Our projector rental service provides high-lumen HD and 4K projectors paired with premium motorized screens.", [
+export const projectorData = makeService("services/projector-rental", "/services/projector-rental", "Projector", "Rental", "HD & 4K projectors with motorized screens. Perfect for presentations, training sessions & small events.", projectorImg, "Our projector rental service provides high-lumen HD and 4K projectors paired with premium motorized screens.", [
   { icon: "CheckCircle2", title: "HD & 4K Options", desc: "Choose from Full HD or native 4K projectors" },
   { icon: "CheckCircle2", title: "High Lumens", desc: "4000-10000 lumens for any room lighting" },
   { icon: "CheckCircle2", title: "Motorized Screens", desc: "Automatic screens from 100\" to 300\" diagonal" },
@@ -187,7 +187,7 @@ export const projectorData = makeService("projector", "/services/projector-renta
   { size: "Grand", spec: "4K + 300\" screen", price: "Rs. 12,000" },
 ]);
 
-export const ledTvData = makeService("ledTv", "/services/led-tv-rental", "LED TV", "Rental", "LED TVs from 32\" to 85\" for events. Perfect for exhibitions, retail displays & small presentations.", tv1, "Our LED TV rental offers screens from 32 to 85 inches for exhibitions, retail, and small presentations.", [
+export const ledTvData = makeService("services/led-tv-rental", "/services/led-tv-rental", "LED TV", "Rental", "LED TVs from 32\" to 85\" for events. Perfect for exhibitions, retail displays & small presentations.", tv1, "Our LED TV rental offers screens from 32 to 85 inches for exhibitions, retail, and small presentations.", [
   { icon: "CheckCircle2", title: "Multiple Sizes", desc: "32\", 43\", 55\", 65\", 75\", and 85\" options" },
   { icon: "CheckCircle2", title: "4K Displays", desc: "Ultra HD resolution for crystal-clear visuals" },
   { icon: "CheckCircle2", title: "Portrait or Landscape", desc: "Mount in either orientation" },
@@ -205,7 +205,7 @@ export const ledTvData = makeService("ledTv", "/services/led-tv-rental", "LED TV
   { size: "65-85\"", spec: "4K + premium stand", price: "Rs. 7,000" },
 ]);
 
-export const soundData = makeService("sound", "/services/sound-system-rental", "Sound System", "Rental", "JBL & Bose sound systems for 50 to 5000 guests. Line arrays, subs, mics & mixing consoles.", soundImg, "Professional sound system rentals featuring JBL and Bose equipment for events of any scale.", [
+export const soundData = makeService("services/sound-system-rental", "/services/sound-system-rental", "Sound System", "Rental", "JBL & Bose sound systems for 50 to 5000 guests. Line arrays, subs, mics & mixing consoles.", soundImg, "Professional sound system rentals featuring JBL and Bose equipment for events of any scale.", [
   { icon: "CheckCircle2", title: "JBL & Bose Gear", desc: "Professional-grade speakers from top brands" },
   { icon: "CheckCircle2", title: "Line Array Systems", desc: "Scalable from small tops to full line arrays" },
   { icon: "CheckCircle2", title: "Wireless Microphones", desc: "Shure & Sennheiser wireless mics" },
@@ -223,7 +223,7 @@ export const soundData = makeService("sound", "/services/sound-system-rental", "
   { size: "Concert", spec: "Full line array + monitors", price: "Rs. 50,000" },
 ]);
 
-export const lightingData = makeService("lighting", "/services/stage-lighting-rental", "Stage Lighting", "Rental", "Moving heads, par cans, lasers & haze machines for dramatic stage effects.", gallery2, "Transform any venue with professional stage lighting — moving heads, LED par cans, lasers, and atmospheric effects.", [
+export const lightingData = makeService("services/stage-lighting-rental", "/services/stage-lighting-rental", "Stage Lighting", "Rental", "Moving heads, par cans, lasers & haze machines for dramatic stage effects.", gallery2, "Transform any venue with professional stage lighting — moving heads, LED par cans, lasers, and atmospheric effects.", [
   { icon: "CheckCircle2", title: "Moving Head Lights", desc: "Intelligent lights with pan/tilt and color mixing" },
   { icon: "CheckCircle2", title: "LED Par Cans", desc: "RGBW par lights for color washing" },
   { icon: "CheckCircle2", title: "Laser Systems", desc: "Full-color laser shows" },
@@ -241,7 +241,7 @@ export const lightingData = makeService("lighting", "/services/stage-lighting-re
   { size: "Production", spec: "Complete lighting production", price: "Rs. 40,000" },
 ]);
 
-export const photoVideoData = makeService("photoVideo", "/services/photography-videography", "Photography &", "Videography", "4K cameras, cinematic editing & live coverage for events of all sizes.", gallery3, "Professional photography and videography team capturing every moment in stunning detail.", [
+export const photoVideoData = makeService("services/photography-videography", "/services/photography-videography", "Photography &", "Videography", "4K cameras, cinematic editing & live coverage for events of all sizes.", gallery3, "Professional photography and videography team capturing every moment in stunning detail.", [
   { icon: "CheckCircle2", title: "4K Cameras", desc: "Professional cinema cameras" },
   { icon: "CheckCircle2", title: "Drone Coverage", desc: "Aerial shots for venue overview" },
   { icon: "CheckCircle2", title: "Multi-Camera", desc: "2-4 camera setup" },
@@ -259,7 +259,7 @@ export const photoVideoData = makeService("photoVideo", "/services/photography-v
   { size: "Premium", spec: "Full crew + drone", price: "Rs. 30,000" },
 ]);
 
-export const karaokeData = makeService("karaoke", "/services/karaoke-rental", "Karaoke", "Rental", "Complete karaoke setups with 50,000+ songs, wireless mics & big-screen display.", gallery6, "Professional karaoke rental with 50,000+ tracks in Hindi, English, Punjabi, and regional languages.", [
+export const karaokeData = makeService("services/karaoke-rental", "/services/karaoke-rental", "Karaoke", "Rental", "Complete karaoke setups with 50,000+ songs, wireless mics & big-screen display.", gallery6, "Professional karaoke rental with 50,000+ tracks in Hindi, English, Punjabi, and regional languages.", [
   { icon: "CheckCircle2", title: "50,000+ Songs", desc: "Hindi, English, Punjabi & more" },
   { icon: "CheckCircle2", title: "Wireless Mics", desc: "2 wireless mics with anti-feedback" },
   { icon: "CheckCircle2", title: "Big Screen", desc: "55\"+ display with lyrics" },
@@ -275,7 +275,7 @@ export const karaokeData = makeService("karaoke", "/services/karaoke-rental", "K
   { size: "Premium", spec: "Premium sound + 2 displays", price: "Rs. 15,000" },
 ]);
 
-export const paSystemData = makeService("paSystem", "/services/pa-system-rental", "PA System", "Rental", "Public address systems for speeches, conferences & outdoor announcements.", sound1, "Clear, reliable sound for speeches, conferences, and outdoor announcements.", [
+export const paSystemData = makeService("services/pa-system-rental", "/services/pa-system-rental", "PA System", "Rental", "Public address systems for speeches, conferences & outdoor announcements.", sound1, "Clear, reliable sound for speeches, conferences, and outdoor announcements.", [
   { icon: "CheckCircle2", title: "Portable PA", desc: "Portable systems for small venues" },
   { icon: "CheckCircle2", title: "Column Speakers", desc: "Sleek column speakers for conferences" },
   { icon: "CheckCircle2", title: "Wireless Mics", desc: "Handheld, lapel, and headset options" },
@@ -292,7 +292,7 @@ export const paSystemData = makeService("paSystem", "/services/pa-system-rental"
   { size: "Outdoor", spec: "Full outdoor PA", price: "Rs. 20,000" },
 ]);
 
-export const djEquipmentData = makeService("dj", "/services/dj-equipment-rental", "DJ Equipment", "Rental", "CDJs, controllers, mixers & complete DJ packages for parties and events.", gallery6, "DJ equipment rental for both professional DJs and event organizers.", [
+export const djEquipmentData = makeService("services/dj-equipment-rental", "/services/dj-equipment-rental", "DJ Equipment", "Rental", "CDJs, controllers, mixers & complete DJ packages for parties and events.", gallery6, "DJ equipment rental for both professional DJs and event organizers.", [
   { icon: "CheckCircle2", title: "Pioneer CDJs", desc: "Industry-standard CDJ-2000NXS2" },
   { icon: "CheckCircle2", title: "DJ Mixers", desc: "DJM-900NXS2 professional mixers" },
   { icon: "CheckCircle2", title: "Controllers", desc: "All-in-one controllers for mobile DJs" },
@@ -309,7 +309,7 @@ export const djEquipmentData = makeService("dj", "/services/dj-equipment-rental"
   { size: "Full Package", spec: "CDJ + sound + lights", price: "Rs. 25,000" },
 ]);
 
-export const streamingData = makeService("streaming", "/services/live-streaming", "Live", "Streaming", "Professional multi-camera live streaming with YouTube & Facebook integration.", gallery4, "Broadcast-quality live streaming to YouTube, Facebook, Instagram, or any platform.", [
+export const streamingData = makeService("services/live-streaming", "/services/live-streaming", "Live", "Streaming", "Professional multi-camera live streaming with YouTube & Facebook integration.", gallery4, "Broadcast-quality live streaming to YouTube, Facebook, Instagram, or any platform.", [
   { icon: "CheckCircle2", title: "Multi-Camera", desc: "2-4 cameras with professional switching" },
   { icon: "CheckCircle2", title: "Graphics Overlay", desc: "Lower thirds, logos, and branding" },
   { icon: "CheckCircle2", title: "Multi-Platform", desc: "Stream to multiple platforms simultaneously" },
@@ -325,7 +325,7 @@ export const streamingData = makeService("streaming", "/services/live-streaming"
   { size: "Premium", spec: "4 cameras + full production", price: "Rs. 35,000" },
 ]);
 
-export const conferenceSetupData = makeService("conference", "/services/conference-setup", "Conference", "Setup", "End-to-end conference AV solutions with LED walls, sound, mics & technical crew.", gallery1, "Complete conference AV handling all requirements — LED walls, sound, microphones, and technical crew.", [
+export const conferenceSetupData = makeService("services/conference-setup", "/services/conference-setup", "Conference", "Setup", "End-to-end conference AV solutions with LED walls, sound, mics & technical crew.", gallery1, "Complete conference AV handling all requirements — LED walls, sound, microphones, and technical crew.", [
   { icon: "CheckCircle2", title: "LED Wall / Projector", desc: "Large-format display for presentations" },
   { icon: "CheckCircle2", title: "Sound System", desc: "Clear audio for speakers and Q&A" },
   { icon: "CheckCircle2", title: "Wireless Mics", desc: "Handheld, lapel, and podium mics" },
@@ -341,7 +341,7 @@ export const conferenceSetupData = makeService("conference", "/services/conferen
   { size: "Large", spec: "Full production setup", price: "Rs. 45,000" },
 ]);
 
-export const weddingAvData = makeService("weddingAv", "/services/wedding-av", "Wedding", "AV", "Complete wedding AV with LED backdrops, concert sound, romantic lighting & technical crew.", gallery2, "Make your wedding unforgettable with complete wedding AV — LED backdrops, concert sound, and romantic lighting.", [
+export const weddingAvData = makeService("services/wedding-av", "/services/wedding-av", "Wedding", "AV", "Complete wedding AV with LED backdrops, concert sound, romantic lighting & technical crew.", gallery2, "Make your wedding unforgettable with complete wedding AV — LED backdrops, concert sound, and romantic lighting.", [
   { icon: "CheckCircle2", title: "LED Backdrop", desc: "Stunning LED walls for photos" },
   { icon: "CheckCircle2", title: "Concert Sound", desc: "Powerful sound for sangeet & reception" },
   { icon: "CheckCircle2", title: "Romantic Lighting", desc: "Ambient lighting for perfect mood" },

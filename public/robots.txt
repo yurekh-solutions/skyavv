@@ -1,4 +1,4 @@
-# robots.txt for Sky Aviation Creative Studio
+# robots.txt for Sky Vision Multimedia
 
 User-agent: *
 Allow: /

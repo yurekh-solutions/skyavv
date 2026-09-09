@@ -5,6 +5,9 @@ import PageHero from "@/components/shared/PageHero";
 import SectionHeading from "@/components/shared/SectionHeading";
 import CTASection from "@/components/shared/CTASection";
 import StatsBar from "@/components/shared/StatsBar";
+import FAQAccordion from "@/components/shared/FAQAccordion";
+import type { FAQItem } from "@/components/shared/FAQAccordion";
+import { pageSEO } from "@/config/seo";
 
 const services = [
   { path: "/services/led-wall-rental", title: "LED Wall Rental", desc: "Indoor & outdoor LED screens with stunning visuals", icon: Monitor, badge: "Popular" },
@@ -24,13 +27,24 @@ const services = [
 ];
 
 const ServicesOverview = () => {
+  const servicesFaqs: FAQItem[] = [
+    { question: "What AV equipment rental services does Sky Vision offer in Mumbai?", answer: "Sky Vision offers 14 complete AV services including LED wall rental (indoor & outdoor), projector rental, sound system rental, stage lighting, LED TV rental, photography & videography, karaoke rental, PA systems, DJ equipment, live streaming, conference setup, and wedding AV packages across Mumbai.", category: "Services" },
+    { question: "How much does it cost to rent AV equipment in Mumbai?", answer: "LED walls start from Rs. 15,000 per day, projectors from Rs. 2,500 per day, sound systems from Rs. 5,000 per day, and stage lighting from Rs. 8,000 per day. All prices include delivery, setup, and technical support. Contact us for custom package pricing.", category: "Pricing" },
+    { question: "Do you provide AV equipment for both indoor and outdoor events?", answer: "Yes, we provide complete AV solutions for both indoor and outdoor events. Indoor equipment includes P1.5 to P3.9 LED walls, projectors, and PA systems. Outdoor equipment includes weatherproof P3.9 LED walls with 6000+ nits brightness, line array sound systems, and concert-grade stage lighting.", category: "Equipment" },
+    { question: "Can I rent multiple AV equipment together for a discounted price?", answer: "Yes, we offer customized packages combining LED walls, sound systems, lighting, and other equipment at discounted rates. Share your event details and we will create a personalized package within 30 minutes.", category: "Pricing" },
+    { question: "Do your technicians stay during the event?", answer: "Yes, our certified technicians handle complete installation, remain on-site during your event for operational support and troubleshooting, and manage breakdown after the event concludes.", category: "Services" },
+    { question: "Which areas in Mumbai do you deliver AV equipment to?", answer: "We deliver to all Mumbai areas including Andheri, Bandra, BKC, Juhu, Worli, Powai, Dahisar, Navi Mumbai, Thane, and beyond. We also serve Pune, Lonavala, Surat, and Goa for outstation events.", category: "Service Areas" },
+  ];
+
   return (
     <>
       <SEO
-        title="AV Equipment Rental Services Mumbai | Complete AV Solutions"
-        description="Complete AV equipment rental services in Mumbai — LED walls, projectors, sound systems, stage lighting, photography, karaoke, DJ equipment, live streaming & more. Free delivery & setup."
-        keywords="AV services Mumbai, LED wall rental services, projector rental, sound system rental, stage lighting, event AV services, corporate AV solutions"
+        title={pageSEO.services.title}
+        description={pageSEO.services.description}
+        keywords={pageSEO.services.keywords}
         url="https://skyav.in/services"
+        faqSchema={servicesFaqs.map((f) => ({ question: f.question, answer: f.answer }))}
+        breadcrumbs={[{ label: "Home", path: "/" }, { label: "Services", path: "/services" }]}
       />
 
       <PageHero
@@ -92,7 +106,7 @@ const ServicesOverview = () => {
           <SectionHeading badge="Why Sky Vision" title="Trusted by" highlight="5 Lakh+ Events" />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { title: "Free Delivery & Setup", desc: "Free delivery and professional setup across Mumbai, Navi Mumbai & Thane." },
+              { title: "Included Delivery & Setup", desc: "Included delivery and professional setup across Mumbai, Navi Mumbai & Thane." },
               { title: "Premium Equipment", desc: "Only top brands — JBL, Bose, Pioneer, Samsung, LG, Yamaha & more." },
               { title: "Expert Technicians", desc: "Our team handles installation, operation & troubleshooting on-site." },
               { title: "24/7 Support", desc: "Round-the-clock phone & WhatsApp support during your event." },
@@ -104,6 +118,14 @@ const ServicesOverview = () => {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-12 md:py-16 mesh-bg-soft">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeading badge="FAQ" title="AV Services" highlight="Questions" description="Quick answers about our AV equipment rental services, pricing, and delivery across Mumbai." />
+          <FAQAccordion items={servicesFaqs} showCategories={true} showSearch={false} />
         </div>
       </section>
 

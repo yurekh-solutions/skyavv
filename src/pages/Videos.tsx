@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { X, Play, Video, Monitor, Speaker, Lightbulb } from "lucide-react";
+import { X, Play, Video, Monitor } from "lucide-react";
 import SEO from "@/components/SEO";
 import PageHero from "@/components/shared/PageHero";
 import SectionHeading from "@/components/shared/SectionHeading";
@@ -7,23 +7,27 @@ import TabPanel from "@/components/shared/TabPanel";
 import type { TabItem } from "@/components/shared/TabPanel";
 import CTASection from "@/components/shared/CTASection";
 import { pageSEO } from "@/config/seo";
-import ledwall1 from "@/assets/ledwall1.mp4";
-import ledwall2 from "@/assets/ledwall2.mp4";
-import ledtv from "@/assets/ledtv.mp4";
-import ledtv2 from "@/assets/ledtv2.mp4";
-import ledtv4 from "@/assets/ledtv4.mp4";
-import led77 from "@/assets/led77.mp4";
+
+// Video paths — loaded dynamically, not bundled as static imports
+const VIDEOS = {
+  ledwall1: "/videos/ledwall1.mp4",
+  ledwall2: "/videos/ledwall2.mp4",
+  ledtv: "/videos/ledtv.mp4",
+  ledtv2: "/videos/ledtv2.mp4",
+  ledtv4: "/videos/ledtv4.mp4",
+  led77: "/videos/led77.mp4",
+};
 
 const Videos = () => {
   const [playing, setPlaying] = useState<string | null>(null);
 
   const videoCards = [
-    { src: ledwall1, title: "LED Wall Live Demo", category: "LED Walls", desc: "Watch our P2.5 LED wall in action with vibrant colors" },
-    { src: ledwall2, title: "Outdoor LED Wall Setup", category: "LED Walls", desc: "6000 nit outdoor LED wall at a daytime concert event" },
-    { src: led77, title: "LED Wall Event Coverage", category: "LED Walls", desc: "Large-format LED wall powering a corporate conference" },
-    { src: ledtv, title: "LED TV Display Setup", category: "LED TVs", desc: "Multiple LED TVs configured for an exhibition booth" },
-    { src: ledtv2, title: "LED TV Product Display", category: "LED TVs", desc: "Large-screen TV setup for a product launch event" },
-    { src: ledtv4, title: "LED TV Wall Configuration", category: "LED TVs", desc: "Multi-screen LED TV wall for a trade show display" },
+    { src: VIDEOS.ledwall1, title: "LED Wall Live Demo", category: "LED Walls", desc: "Watch our P2.5 LED wall in action with vibrant colors" },
+    { src: VIDEOS.ledwall2, title: "Outdoor LED Wall Setup", category: "LED Walls", desc: "6000 nit outdoor LED wall at a daytime concert event" },
+    { src: VIDEOS.led77, title: "LED Wall Event Coverage", category: "LED Walls", desc: "Large-format LED wall powering a corporate conference" },
+    { src: VIDEOS.ledtv, title: "LED TV Display Setup", category: "LED TVs", desc: "Multiple LED TVs configured for an exhibition booth" },
+    { src: VIDEOS.ledtv2, title: "LED TV Product Display", category: "LED TVs", desc: "Large-screen TV setup for a product launch event" },
+    { src: VIDEOS.ledtv4, title: "LED TV Wall Configuration", category: "LED TVs", desc: "Multi-screen LED TV wall for a trade show display" },
   ];
 
   const tabs: TabItem[] = [
@@ -34,14 +38,14 @@ const Videos = () => {
         ))}
       </div>
     )},
-    { value: "led", label: "LED Walls", icon: <Monitor className="h-4 w-4" />, content: (
+    { value: "led", label: "LED Walls", content: (
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {videoCards.filter((v) => v.category === "LED Walls").map((v, i) => (
           <VideoCard key={i} video={v} onClick={() => setPlaying(v.src)} />
         ))}
       </div>
     )},
-    { value: "tvs", label: "LED TVs", icon: <Video className="h-4 w-4" />, content: (
+    { value: "tvs", label: "LED TVs", content: (
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {videoCards.filter((v) => v.category === "LED TVs").map((v, i) => (
           <VideoCard key={i} video={v} onClick={() => setPlaying(v.src)} />
@@ -85,8 +89,14 @@ const Videos = () => {
 
 const VideoCard = ({ video, onClick }: { video: { src: string; title: string; category: string; desc: string }; onClick: () => void }) => (
   <div className="glass-card rounded-2xl overflow-hidden hover-lift group cursor-pointer" onClick={onClick}>
-    <div className="relative h-48 overflow-hidden">
-      <video src={video.src} className="w-full h-full object-cover" muted />
+    <div className="relative h-48 overflow-hidden bg-gray-900">
+      <video
+        src={video.src}
+        className="w-full h-full object-cover"
+        muted
+        preload="none"
+        playsInline
+      />
       <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-center justify-center">
         <div className="w-16 h-16 rounded-full vibrant-gradient flex items-center justify-center group-hover:scale-110 transition-transform shadow-2xl animate-pulse-glow">
           <Play className="h-8 w-8 text-white ml-1" fill="white" />

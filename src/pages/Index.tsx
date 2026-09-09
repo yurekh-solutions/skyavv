@@ -33,6 +33,8 @@ import TabPanel from "@/components/shared/TabPanel";
 import type { TabItem } from "@/components/shared/TabPanel";
 import FlipCard from "@/components/shared/FlipCard";
 import InstagramFeed from "@/components/InstagramFeed";
+import FAQAccordion from "@/components/shared/FAQAccordion";
+import type { FAQItem } from "@/components/shared/FAQAccordion";
 import ledWallImg from "@/assets/tv3.jpeg";
 import projectorImg from "@/assets/projector.jpg";
 import soundSystemImg from "@/assets/sound1.png";
@@ -42,7 +44,9 @@ import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
 import gallery5 from "@/assets/gallery-5.jpg";
 import gallery6 from "@/assets/gallery-6.jpg";
-import ledWallVideo from "@/assets/ledwall1.mp4";
+
+// Load video on demand from public folder — avoids bundling 48MB into the JS payload
+const LED_WALL_VIDEO = "/videos/ledwall1.mp4";
 
 const Index = () => {
   useEffect(() => {
@@ -81,12 +85,15 @@ const Index = () => {
     { image: gallery6, title: "Celebrity Birthday Bash", category: "Party", description: "DJ setup & LED dance floor at JW Marriott" },
   ];
 
-  const faqs = [
-    { question: "What areas do you serve?", answer: "We provide AV equipment rental across Mumbai, Navi Mumbai, Thane, Pune, Lonavala, Surat, and Goa with free delivery within Mumbai city limits." },
-    { question: "How far in advance should I book?", answer: "We recommend 7-10 days for peak season (Oct-Mar) and 3-5 days for regular bookings. Same-day bookings are available subject to availability." },
-    { question: "Do you provide setup and technical support?", answer: "Yes! We provide complete setup, on-site technical support during your event, and breakdown services — all included at no extra cost." },
-    { question: "What are your rental rates?", answer: "Rates vary by equipment and duration. LED walls start from Rs. 15,000/day, projectors from Rs. 2,500/day, sound systems from Rs. 5,000/day. Call for a custom quote." },
-    { question: "Do you offer package deals?", answer: "Yes! We offer customized packages combining multiple equipment at discounted rates. Contact us with your event details for a personalized package." },
+  const faqs: FAQItem[] = [
+    { question: "What areas do you serve for AV equipment rental?", answer: "We provide AV equipment rental across Mumbai, Navi Mumbai, Thane, Pune, Lonavala, Surat, and Goa with included delivery within Mumbai city limits. Same-day delivery is available for urgent bookings.", category: "Service Areas" },
+    { question: "How far in advance should I book AV equipment for my event?", answer: "We recommend booking 7-10 days before your event during peak season (October to March) and 3-5 days for regular bookings. Same-day bookings are available subject to equipment availability.", category: "Booking" },
+    { question: "Do you provide setup and technical support with the equipment?", answer: "Yes, every rental includes complete setup, on-site technical support during your event, and breakdown services at no extra cost. Our certified technicians handle installation, operation, and troubleshooting.", category: "Services" },
+    { question: "What are your rental rates for LED walls, projectors, and sound systems?", answer: "LED walls start from Rs. 15,000 per day, projectors from Rs. 2,500 per day, and sound systems from Rs. 5,000 per day. Rates vary by equipment type, size, and duration. Contact us for a custom quote tailored to your event.", category: "Pricing" },
+    { question: "Do you offer package deals for multiple AV equipment?", answer: "Yes, we offer customized packages combining LED walls, sound systems, lighting, and other equipment at discounted rates. Share your event details and we will create a personalized package within 30 minutes.", category: "Pricing" },
+    { question: "What types of events do you provide AV equipment for?", answer: "We power all event types including weddings, corporate conferences, concerts, exhibitions, birthday parties, product launches, college fests, fashion shows, award ceremonies, and private gatherings across Mumbai and beyond.", category: "Services" },
+    { question: "What equipment brands do you use?", answer: "We only use premium brands including JBL, Bose, and Yamaha for sound systems; Samsung and LG for LED TVs; Pioneer for DJ equipment; and high-quality P2.5 and P3.9 LED wall panels with 6000+ nits brightness.", category: "Equipment" },
+    { question: "Can I get same-day AV equipment delivery in Mumbai?", answer: "Yes, same-day delivery and setup is available across Mumbai, Navi Mumbai, and Thane based on equipment availability. Call us early in the morning for the best chance of same-day fulfillment.", category: "Booking" },
   ];
 
   const locations = [
@@ -164,7 +171,7 @@ const Index = () => {
 
   // SEO keyword services
   const seoServices = [
-    { title: "LED Wall Rental Mumbai", desc: "P2.5 & P3.9 LED screen rental for indoor and outdoor events. Sizes from 6ft to 40ft with free delivery and setup across Mumbai, Navi Mumbai, Thane, and Pune.", link: "/services/led-wall-rental" },
+    { title: "LED Wall Rental Mumbai", desc: "P2.5 & P3.9 LED screen rental for indoor and outdoor events. Sizes from 6ft to 40ft with included delivery and setup across Mumbai, Navi Mumbai, Thane, and Pune.", link: "/services/led-wall-rental" },
     { title: "Projector Rental Mumbai", desc: "HD & 4K projector rental with motorized screens. 3000 to 10000 lumens for conferences, presentations, movie nights, and weddings. Same-day delivery available.", link: "/services/projector-rental" },
     { title: "Sound System Rental Mumbai", desc: "Professional JBL & Bose sound system rental for 50 to 5000 guests. Concert-grade line arrays, wireless microphones, mixers, and PA systems for all event types.", link: "/services/sound-system-rental" },
     { title: "Stage Lighting Rental Mumbai", desc: "LED par cans, moving head lights, spotlights, lasers, and haze machines for concerts, weddings, fashion shows, and corporate events. DMX control included.", link: "/services/stage-lighting-rental" },
@@ -216,7 +223,7 @@ const Index = () => {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/quote" className="inline-flex items-center justify-center gap-2 px-8 py-4 vibrant-gradient text-white rounded-full font-bold text-lg shadow-2xl hover:scale-105 transition-transform">
-                  Get Free Quote <ArrowRight className="h-5 w-5" />
+                  Get Instant Quote <ArrowRight className="h-5 w-5" />
                 </Link>
                 <a href="tel:+918655973366" className="inline-flex items-center justify-center gap-2 px-8 py-4 glass-strong text-gray-800 rounded-full font-bold text-lg border border-primary/20 hover:scale-105 transition-transform">
                   <Phone className="h-5 w-5 text-primary" /> +91 86559 73366
@@ -236,7 +243,7 @@ const Index = () => {
               <div className="absolute -inset-4 vibrant-gradient-animated rounded-[2.5rem] opacity-20 blur-2xl" />
               <div className="relative glass-card rounded-3xl p-3 shadow-2xl">
                 <div className="relative rounded-2xl overflow-hidden">
-                  <video src={ledWallVideo} autoPlay loop muted playsInline className="w-full aspect-video object-cover" />
+                  <video src={LED_WALL_VIDEO} autoPlay loop muted playsInline className="w-full aspect-video object-cover" />
                   <div className="absolute top-4 left-4 inline-flex items-center gap-2 px-3 py-1.5 glass-dark rounded-full">
                     <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
                     <span className="text-xs font-bold text-white tracking-wide">LIVE DEMO</span>
@@ -421,7 +428,7 @@ const Index = () => {
             <div className="relative">
               <div className="absolute -inset-3 vibrant-gradient-animated rounded-3xl opacity-15 blur-2xl" />
               <div className="relative glass-card rounded-3xl p-2 shadow-2xl">
-                <video src={ledWallVideo} autoPlay loop muted playsInline className="w-full rounded-2xl aspect-video object-cover" />
+                <video src={LED_WALL_VIDEO} autoPlay loop muted playsInline className="w-full rounded-2xl aspect-video object-cover" />
               </div>
             </div>
             <div className="space-y-5">
@@ -517,7 +524,7 @@ const Index = () => {
       {/* ===== NEW: SEO Keyword-Rich Services Section ===== */}
       <section className="py-16 md:py-24 mesh-bg-soft relative overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading badge="AV Equipment Rental" title="Complete" highlight="AV Solutions" description="Mumbai's most comprehensive AV equipment rental service. Free delivery, professional setup, and 24/7 technical support." />
+          <SectionHeading badge="AV Equipment Rental" title="Complete" highlight="AV Solutions" description="Mumbai's most comprehensive AV equipment rental service. Included delivery, professional setup, and 24/7 technical support." />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {seoServices.map((s, i) => (
               <Link key={i} to={s.link} className="glass-card rounded-2xl p-6 hover-lift group block">
@@ -537,7 +544,7 @@ const Index = () => {
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="text-center md:text-left">
                 <h3 className="text-xl font-bold text-gray-900 mb-1">Serving Maharashtra & Beyond</h3>
-                <p className="text-sm text-gray-600">Free delivery across Mumbai. Professional setup at all locations.</p>
+                <p className="text-sm text-gray-600">Included delivery across Mumbai. Professional setup at all locations.</p>
               </div>
               <div className="flex flex-wrap justify-center gap-2">
                 {locations.map((loc) => (
@@ -546,6 +553,14 @@ const Index = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ===== FAQ Section — AEO/GEO Optimized ===== */}
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeading badge="Got Questions?" title="Frequently Asked" highlight="Questions" description="Find answers to common questions about AV equipment rental in Mumbai. Can't find what you're looking for? Call us at +91 86559 73366." />
+          <FAQAccordion items={faqs} showCategories={true} showSearch={true} />
         </div>
       </section>
 

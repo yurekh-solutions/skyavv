@@ -7,6 +7,7 @@ import FAQAccordion from "@/components/shared/FAQAccordion";
 import type { FAQItem } from "@/components/shared/FAQAccordion";
 import CTASection from "@/components/shared/CTASection";
 import StatsBar from "@/components/shared/StatsBar";
+import { pageSEO } from "@/config/seo";
 
 export interface LocationPageData {
   seoKey: string;
@@ -28,10 +29,12 @@ const LocationPageTemplate = ({ data }: { data: LocationPageData }) => {
   return (
     <>
       <SEO
-        title={data.seoKey}
-        description={data.seoKey}
-        keywords={data.seoKey}
+        title={(pageSEO[data.seoKey] || { title: data.pageTitle }).title}
+        description={(pageSEO[data.seoKey] || { description: data.description }).description}
+        keywords={(pageSEO[data.seoKey] || { keywords: "" }).keywords}
         url={`https://skyav.in${data.url}`}
+        faqSchema={data.faqs.map((f) => ({ question: f.question, answer: f.answer }))}
+        breadcrumbs={[{ label: "Home", path: "/" }, { label: "Locations", path: "/locations/mumbai" }, { label: data.pageTitle, path: data.url }]}
       />
 
       <PageHero
@@ -58,7 +61,7 @@ const LocationPageTemplate = ({ data }: { data: LocationPageData }) => {
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900">{data.pageTitle} {data.pageHighlight}</h2>
             <p className="text-gray-600 leading-relaxed">{data.overview}</p>
             <ul className="space-y-2">
-              {["Free delivery & professional setup", "25+ years of AV rental experience", "Premium branded equipment", "Same-day delivery available"].map((item) => (
+              {["Included delivery & professional setup", "25+ years of AV rental experience", "Premium branded equipment", "Same-day delivery available"].map((item) => (
                 <li key={item} className="flex items-center gap-2 text-gray-700"><CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0" /> {item}</li>
               ))}
             </ul>

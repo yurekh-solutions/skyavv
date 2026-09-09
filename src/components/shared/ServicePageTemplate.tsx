@@ -11,6 +11,7 @@ import type { FAQItem } from "@/components/shared/FAQAccordion";
 import CTASection from "@/components/shared/CTASection";
 import type { GalleryItem } from "@/components/shared/ImageGallery";
 import ImageGallery from "@/components/shared/ImageGallery";
+import { pageSEO } from "@/config/seo";
 
 export interface ServicePageData {
   seoKey: string;
@@ -38,10 +39,13 @@ const ServicePageTemplate = ({ data }: { data: ServicePageData }) => {
   return (
     <>
       <SEO
-        title={data.seoKey}
-        description={data.seoKey}
-        keywords={data.seoKey}
+        title={(pageSEO[data.seoKey] || { title: data.pageTitle }).title}
+        description={(pageSEO[data.seoKey] || { description: data.description }).description}
+        keywords={(pageSEO[data.seoKey] || { keywords: "" }).keywords}
         url={`https://skyav.in${data.url}`}
+        faqSchema={data.faqs.map((f) => ({ question: f.question, answer: f.answer }))}
+        breadcrumbs={[{ label: "Home", path: "/" }, { label: "Services", path: "/services" }, { label: data.pageTitle, path: data.url }]}
+        serviceSchema={{ name: `${data.pageTitle} ${data.pageHighlight}`, description: data.overview, areaServed: ["Mumbai", "Navi Mumbai", "Thane", "Pune", "Goa"], url: `https://skyav.in${data.url}` }}
       />
 
       <PageHero
@@ -72,7 +76,7 @@ const ServicePageTemplate = ({ data }: { data: ServicePageData }) => {
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900">{data.pageTitle} {data.pageHighlight} in Mumbai</h2>
               <p className="text-gray-600 leading-relaxed">{data.overview}</p>
               <ul className="space-y-2">
-                {["Free delivery & setup in Mumbai", "Professional on-site technicians", "Premium branded equipment", "Same-day delivery available"].map((item) => (
+                {["Included delivery & setup in Mumbai", "Professional on-site technicians", "Premium branded equipment", "Same-day delivery available"].map((item) => (
                   <li key={item} className="flex items-center gap-2 text-gray-700"><CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0" /> {item}</li>
                 ))}
               </ul>

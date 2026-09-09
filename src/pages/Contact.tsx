@@ -3,6 +3,8 @@ import { Phone, Mail, MapPin, Clock, Instagram, Send, CheckCircle2, MessageCircl
 import SEO from "@/components/SEO";
 import PageHero from "@/components/shared/PageHero";
 import SectionHeading from "@/components/shared/SectionHeading";
+import FAQAccordion from "@/components/shared/FAQAccordion";
+import type { FAQItem } from "@/components/shared/FAQAccordion";
 import { pageSEO } from "@/config/seo";
 
 const Contact = () => {
@@ -26,9 +28,18 @@ const Contact = () => {
 
   const serviceAreas = ["Mumbai", "Navi Mumbai", "Thane", "Pune", "Lonavala", "Surat", "Goa", "Andheri", "Bandra", "BKC", "Juhu", "Dahisar", "Powai", "Worli"];
 
+  const contactFaqs: FAQItem[] = [
+    { question: "How quickly do you respond to enquiries?", answer: "We respond to all enquiries within 30 minutes during business hours (9am-9pm, Monday to Sunday). For urgent requirements, call us directly at +91 86559 73366 for immediate assistance.", category: "Response Time" },
+    { question: "Do you provide AV equipment rental across all Mumbai areas?", answer: "Yes, we provide AV equipment rental across all Mumbai areas including Andheri, Bandra, BKC, Juhu, Worli, Powai, Dahisar, Navi Mumbai, Thane, and beyond. We also serve Pune, Lonavala, Surat, and Goa.", category: "Service Areas" },
+    { question: "Can I get a quote over WhatsApp?", answer: "Absolutely! You can send your event details, requirements, and preferred date via WhatsApp at +91 86559 73366 and we will share a detailed quote within 30 minutes.", category: "Booking" },
+    { question: "What information do you need for a quote?", answer: "We need your event type, date, venue location, expected number of guests, and the specific equipment you need (LED wall, sound system, lighting, etc.). Share any details and we will create a customized quote.", category: "Booking" },
+    { question: "Do you offer same-day delivery and setup?", answer: "Yes, same-day delivery and professional setup is available across Mumbai, Navi Mumbai, and Thane based on equipment availability. Call us early for the best chance of same-day fulfillment.", category: "Services" },
+    { question: "What payment methods do you accept?", answer: "We accept UPI, bank transfer, cash, and all major cards. A 50% advance payment is required to confirm bookings, with the balance due on or before the event day.", category: "Payment" },
+  ];
+
   return (
     <>
-      <SEO title={pageSEO.contact.title} description={pageSEO.contact.description} keywords={pageSEO.contact.keywords} url="https://skyav.in/contact" breadcrumbs={[{ label: "Home", path: "/" }, { label: "Contact", path: "/contact" }]} />
+      <SEO title={pageSEO.contact.title} description={pageSEO.contact.description} keywords={pageSEO.contact.keywords} url="https://skyav.in/contact" faqSchema={contactFaqs.map((f) => ({ question: f.question, answer: f.answer }))} breadcrumbs={[{ label: "Home", path: "/" }, { label: "Contact", path: "/contact" }]} />
 
       <PageHero
         title="Get in"
@@ -145,7 +156,7 @@ const Contact = () => {
       {/* Service Areas */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading badge="Coverage" title="Areas We" highlight="Serve" description="Free delivery within Mumbai city limits. Competitive rates for outstation events." />
+          <SectionHeading badge="Coverage" title="Areas We" highlight="Serve" description="Included delivery within Mumbai city limits. Competitive rates for outstation events." />
           <div className="flex flex-wrap justify-center gap-3 max-w-3xl mx-auto">
             {serviceAreas.map((area, i) => (
               <span key={i} className="glass-card px-4 py-2 rounded-full text-sm font-semibold text-gray-700 hover:text-primary hover:scale-105 transition-all cursor-default">
@@ -153,6 +164,14 @@ const Contact = () => {
               </span>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-12 md:py-16 mesh-bg-soft">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeading badge="FAQ" title="Contact &" highlight="Booking Questions" description="Quick answers to common questions about reaching us, getting quotes, and booking AV equipment in Mumbai." />
+          <FAQAccordion items={contactFaqs} showCategories={true} showSearch={false} />
         </div>
       </section>
     </>

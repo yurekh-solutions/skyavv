@@ -78,7 +78,7 @@ const Contact = () => {
             Get In <span className="text-gradient">Touch</span>
           </h2>
           <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto">
-            Request a free quote or call us directly - we're here to help 24/7
+            Request an instant quote or call us directly - we're here to help 24/7
           </p>
         </div>
 

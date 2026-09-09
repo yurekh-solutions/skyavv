@@ -112,7 +112,7 @@ const Services = () => {
               <span className="text-xs md:text-sm font-semibold text-gray-700">✓ Same Day Delivery</span>
             </div>
             <div className="bg-white/60 backdrop-blur-md px-3 md:px-4 py-2 rounded-full border border-white/40 shadow-lg">
-              <span className="text-xs md:text-sm font-semibold text-gray-700">✓ Free Setup</span>
+              <span className="text-xs md:text-sm font-semibold text-gray-700">✓ Included Setup</span>
             </div>
             <div className="bg-white/60 backdrop-blur-md px-3 md:px-4 py-2 rounded-full border border-white/40 shadow-lg">
               <span className="text-xs md:text-sm font-semibold text-gray-700">✓ Technical Support</span>

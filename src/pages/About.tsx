@@ -5,9 +5,11 @@ import PageHero from "@/components/shared/PageHero";
 import SectionHeading from "@/components/shared/SectionHeading";
 import StatsBar from "@/components/shared/StatsBar";
 import CTASection from "@/components/shared/CTASection";
+import FAQAccordion from "@/components/shared/FAQAccordion";
+import type { FAQItem } from "@/components/shared/FAQAccordion";
 import { pageSEO } from "@/config/seo";
-import teamImg from "@/assets/team.png";
 import setupImg from "@/assets/setup.png";
+import ledWallEventImg from "@/assets/led-wall-event.png";
 
 const About = () => {
   const values = [
@@ -33,9 +35,16 @@ const About = () => {
     "Pan-India Delivery Network",
   ];
 
+  const aboutFaqs: FAQItem[] = [
+    { category: "Company", question: "Who is Sky Vision Multimedia?", answer: "Sky Vision Multimedia is Mumbai's most trusted AV equipment rental company with over 25 years of experience. We provide LED walls, sound systems, projectors, stage lighting, and complete AV solutions for all event types, having powered 5 Lakh+ events across Mumbai, Navi Mumbai, Thane, Pune, Lonavala, Surat, and Goa." },
+    { category: "Company", question: "Where is Sky Vision Multimedia located?", answer: "Our office is located at Room No 951, Nayagaon Near Maharashtra Hotel, Laxman Mahatre Road, Dahisar West, Mumbai - 400068. We deliver and set up equipment across all Mumbai areas and surrounding cities." },
+    { category: "Experience", question: "How many events has Sky Vision powered?", answer: "We have powered over 5 Lakh (500,000+) events in our 25+ year history — from intimate 50-person seminars to massive 5000+ guest concerts, weddings, corporate conferences, exhibitions, and festivals." },
+    { category: "Experience", question: "What equipment brands does Sky Vision use?", answer: "We partner with premium brands including JBL, Bose, and Yamaha for audio; Samsung and LG for displays; Pioneer for DJ equipment; and Novastar processors for LED wall control. All equipment is professionally maintained and regularly updated." },
+  ];
+
   return (
     <>
-      <SEO title={pageSEO.about.title} description={pageSEO.about.description} keywords={pageSEO.about.keywords} url="https://skyav.in/about" breadcrumbs={[{ label: "Home", path: "/" }, { label: "About Us", path: "/about" }]} />
+      <SEO title={pageSEO.about.title} description={pageSEO.about.description} keywords={pageSEO.about.keywords} url="https://skyav.in/about" faqSchema={aboutFaqs.map((f) => ({ question: f.question, answer: f.answer }))} breadcrumbs={[{ label: "Home", path: "/" }, { label: "About Us", path: "/about" }]} />
 
       <PageHero
         title="About"
@@ -47,9 +56,10 @@ const About = () => {
       {/* Story Section */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <div className="rounded-3xl overflow-hidden glass-card p-2">
-              <img src={teamImg} alt="Sky Vision Multimedia team" className="w-full rounded-2xl" loading="lazy" decoding="async" />
+          <div className="max-w-5xl mx-auto">
+            {/* LED Wall Event Photo */}
+            <div className="rounded-3xl overflow-hidden glass-card p-2 mb-10">
+              <img src={ledWallEventImg} alt="Sky Vision LED wall installation at corporate event" className="w-full rounded-2xl" loading="lazy" decoding="async" />
             </div>
             <div className="space-y-4">
               <span className="inline-block px-4 py-2 glass-vibrant text-primary rounded-full text-sm font-semibold border border-primary/20">Our Story</span>
@@ -141,9 +151,38 @@ const About = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-2xl" />
             <div className="absolute bottom-8 left-8 right-8 text-white">
               <h3 className="text-2xl md:text-3xl font-bold mb-2">Professional Equipment, Expert Setup</h3>
-              <p className="text-white/80">Every rental includes free delivery, professional setup, and on-site technical support.</p>
+              <p className="text-white/80">Every rental includes delivery, professional setup, and on-site technical support.</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Explore Internal Links — SEO/GEO */}
+      <section className="py-12 md:py-16 mesh-bg-soft">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeading badge="Explore More" title="What We" highlight="Offer" description="Discover our complete range of AV rental services, event solutions, and locations we serve." />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
+            {[
+              { title: "14 AV Services", desc: "LED walls, sound, lighting & more", path: "/services" },
+              { title: "13 Event Types", desc: "Weddings, concerts, conferences & more", path: "/events/weddings" },
+              { title: "7 Cities Served", desc: "Mumbai, Pune, Goa & beyond", path: "/locations/mumbai" },
+              { title: "Expert AV Guides", desc: "Planning tips & pricing guides", path: "/blog" },
+            ].map((item) => (
+              <Link key={item.path} to={item.path} className="glass-card rounded-2xl p-6 hover-lift group text-center">
+                <h3 className="font-bold text-gray-900 mb-1 group-hover:text-primary transition-colors">{item.title}</h3>
+                <p className="text-sm text-gray-600 mb-3">{item.desc}</p>
+                <span className="text-sm font-bold text-primary">Explore →</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section — AEO */}
+      <section className="py-12 md:py-16">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeading badge="FAQ" title="About Sky Vision" highlight="Questions" description="Common questions about who we are, our experience, and the equipment we provide." />
+          <FAQAccordion items={aboutFaqs} showCategories={true} showSearch={false} />
         </div>
       </section>
 

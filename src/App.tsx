@@ -71,6 +71,11 @@ const LedWallVsProjector = React.lazy(() => import("./pages/blog/LedWallVsProjec
 const EventAvPlanningGuide = React.lazy(() => import("./pages/blog/EventAvPlanningGuide"));
 const LedWallPricingGuide = React.lazy(() => import("./pages/blog/LedWallPricingGuide"));
 const SoundSystemSetupGuide = React.lazy(() => import("./pages/blog/SoundSystemSetupGuide"));
+const CorporateEventAvGuide = React.lazy(() => import("./pages/blog/CorporateEventAvGuide"));
+const WeddingAvPlanningGuide = React.lazy(() => import("./pages/blog/WeddingAvPlanningGuide"));
+const StageLightingGuide = React.lazy(() => import("./pages/blog/StageLightingGuide"));
+const AvRentalMistakes = React.lazy(() => import("./pages/blog/AvRentalMistakes"));
+const IndoorVsOutdoorLedWall = React.lazy(() => import("./pages/blog/IndoorVsOutdoorLedWall"));
 
 // NotFound
 const NotFound = React.lazy(() => import("./pages/NotFound"));
@@ -145,6 +150,11 @@ const App = () => (
               <Route path="/blog/event-av-planning-guide" element={<Suspense fallback={<PageLoader />}><EventAvPlanningGuide /></Suspense>} />
               <Route path="/blog/led-wall-pricing-guide" element={<Suspense fallback={<PageLoader />}><LedWallPricingGuide /></Suspense>} />
               <Route path="/blog/sound-system-setup-guide" element={<Suspense fallback={<PageLoader />}><SoundSystemSetupGuide /></Suspense>} />
+              <Route path="/blog/corporate-event-av-guide" element={<Suspense fallback={<PageLoader />}><CorporateEventAvGuide /></Suspense>} />
+              <Route path="/blog/wedding-av-planning-guide" element={<Suspense fallback={<PageLoader />}><WeddingAvPlanningGuide /></Suspense>} />
+              <Route path="/blog/stage-lighting-guide" element={<Suspense fallback={<PageLoader />}><StageLightingGuide /></Suspense>} />
+              <Route path="/blog/av-rental-mistakes" element={<Suspense fallback={<PageLoader />}><AvRentalMistakes /></Suspense>} />
+              <Route path="/blog/indoor-vs-outdoor-led-wall" element={<Suspense fallback={<PageLoader />}><IndoorVsOutdoorLedWall /></Suspense>} />
 
               {/* Catch-all */}
               <Route path="*" element={<Suspense fallback={<PageLoader />}><NotFound /></Suspense>} />

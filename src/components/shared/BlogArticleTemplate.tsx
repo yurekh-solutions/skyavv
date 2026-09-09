@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
-import { CheckCircle2, ArrowRight, Clock, Calendar, User, ArrowLeft, BookOpen, Lightbulb } from "lucide-react";
+import { CheckCircle2, ArrowRight, Clock, Calendar, User, ArrowLeft, BookOpen, Lightbulb, Phone, MessageCircle } from "lucide-react";
 import SEO from "@/components/SEO";
 import PageHero from "@/components/shared/PageHero";
 import SectionHeading from "@/components/shared/SectionHeading";
 import FAQAccordion from "@/components/shared/FAQAccordion";
 import type { FAQItem } from "@/components/shared/FAQAccordion";
 import CTASection from "@/components/shared/CTASection";
+import { pageSEO } from "@/config/seo";
 
 export interface BlogSection {
   id: string;
@@ -32,14 +33,20 @@ export interface BlogArticleData {
 }
 
 const BlogArticleTemplate = ({ data }: { data: BlogArticleData }) => {
+  const seo = pageSEO[data.seoKey] || { title: data.title, description: data.description, keywords: "" };
+  const faqSchemaItems = data.faqs.map((f) => ({ question: f.question, answer: f.answer }));
+
   return (
     <>
       <SEO
-        title={data.seoKey}
-        description={data.seoKey}
-        keywords={data.seoKey}
+        title={seo.title}
+        description={seo.description}
+        keywords={seo.keywords}
         url={`https://skyav.in${data.url}`}
         type="article"
+        faqSchema={faqSchemaItems}
+        breadcrumbs={[{ label: "Home", path: "/" }, { label: "Blog", path: "/blog" }, { label: data.title, path: data.url }]}
+        articleSchema={{ author: data.author, publishDate: data.publishDate }}
       />
 
       <PageHero
@@ -136,6 +143,21 @@ const BlogArticleTemplate = ({ data }: { data: BlogArticleData }) => {
                 )}
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* In-article lead CTA */}
+      <section className="py-8 md:py-12">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto glass-card rounded-3xl p-6 md:p-10 text-center">
+            <Phone className="h-10 w-10 text-primary mx-auto mb-3" />
+            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">Need Help With Your Event AV?</h3>
+            <p className="text-gray-600 mb-5 max-w-xl mx-auto">Speak to our AV experts for a personalised recommendation based on your venue, guest count, and budget.</p>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <a href="tel:+918655973366" className="inline-flex items-center justify-center gap-2 px-6 py-3 vibrant-gradient text-white rounded-full font-bold hover:scale-105 transition-transform"><Phone className="h-4 w-4" /> +91 86559 73366</a>
+              <Link to="/quote" className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-500 to-blue-500 text-white rounded-full font-bold hover:scale-105 transition-transform">Get Instant Quote <ArrowRight className="h-4 w-4" /></Link>
+            </div>
           </div>
         </div>
       </section>

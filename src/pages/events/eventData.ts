@@ -10,13 +10,12 @@ import gallery6 from "@/assets/gallery-6.jpg";
 import heroEvent from "@/assets/hero-event.jpg";
 import ledWallImg from "@/assets/led-wall.jpg";
 import soundImg from "@/assets/sound-system.jpg";
-import teamImg from "@/assets/team.png";
 
 const sharedFaqs = (topic: string): FAQItem[] => [
-  { category: "Pricing", question: `How much does AV setup for ${topic} cost?`, answer: "Packages vary based on venue size, guest count, and requirements. Contact us for a custom quote — we offer competitive rates with free delivery and setup in Mumbai." },
+  { category: "Pricing", question: `How much does AV setup for ${topic} cost?`, answer: "Packages vary based on venue size, guest count, and requirements. Contact us for a custom quote — we offer competitive rates with included delivery and setup in Mumbai." },
   { category: "Planning", question: "How far in advance should we book?", answer: "We recommend booking 2-4 weeks in advance for standard events and 4-8 weeks for large-scale events. Same-week bookings are available subject to availability." },
   { category: "Setup", question: "Is setup and teardown included?", answer: "Yes! Every event package includes professional delivery, setup, on-site technical support during the event, and complete teardown — all at no extra cost." },
-  { category: "Coverage", question: "Which areas do you serve?", answer: "We serve Mumbai, Navi Mumbai, Thane, Pune, Lonavala, Surat, and Goa. Free delivery within Mumbai city limits with competitive outstation rates." },
+  { category: "Coverage", question: "Which areas do you serve?", answer: "We serve Mumbai, Navi Mumbai, Thane, Pune, Lonavala, Surat, and Goa. Included delivery within Mumbai city limits with competitive outstation rates." },
 ];
 
 const sharedTestimonials = [
@@ -56,7 +55,7 @@ const makeEvent = (
 });
 
 export const weddingData = makeEvent(
-  "weddings", "/events/weddings", "Wedding", "AV",
+  "events/weddings", "/events/weddings", "Wedding", "AV",
   "Stunning LED backdrops, concert-grade sound & romantic lighting for your dream wedding.",
   gallery2,
   "Make your wedding unforgettable with our complete wedding AV package. From breathtaking LED backdrops for the perfect photos to concert-grade sound for the sangeet and romantic ambient lighting for the ceremony — we create magical wedding experiences across Mumbai.",
@@ -77,7 +76,7 @@ export const weddingData = makeEvent(
 );
 
 export const corporateData = makeEvent(
-  "corporate", "/events/corporate", "Corporate", "Events",
+  "events/corporate", "/events/corporate", "Corporate", "Events",
   "Professional AV for conferences, AGMs, town halls & corporate gatherings.",
   gallery1,
   "Impress stakeholders with flawless AV at your corporate events. From AGMs and town halls to product launches and award ceremonies — we deliver professional, reliable AV solutions that make your brand shine.",
@@ -97,7 +96,7 @@ export const corporateData = makeEvent(
   sharedGallery(gallery1, gallery4, gallery5, "Corporate"),
 );
 
-export const conferenceData = makeEvent("conferences", "/events/conferences", "Conference", "AV", "Multi-zone audio & large LED displays for impactful conferences.", gallery1, "Professional conference AV with multi-zone audio, large LED displays, and dedicated technical support.", [
+export const conferenceData = makeEvent("events/conferences", "/events/conferences", "Conference", "AV", "Multi-zone audio & large LED displays for impactful conferences.", gallery1, "Professional conference AV with multi-zone audio, large LED displays, and dedicated technical support.", [
   { icon: "CheckCircle2", title: "Multi-zone Audio", desc: "Separate sound zones for main hall, breakout rooms & networking" },
   { icon: "CheckCircle2", title: "Large LED Displays", desc: "Crystal-clear content visible from every seat" },
   { icon: "CheckCircle2", title: "Presentation System", desc: "Seamless switching between speakers and content" },
@@ -109,7 +108,7 @@ export const conferenceData = makeEvent("conferences", "/events/conferences", "C
   { image: gallery4, title: "Large Conference", frontDescription: "Full production for 500+", backDescription: "Professional conference with LED walls and line array sound.", features: ["LED wall display", "Line array sound", "4+ mics", "Live streaming"] },
 ], sharedGallery(gallery1, gallery4, gallery2, "Conference"));
 
-export const concertData = makeEvent("concerts", "/events/concerts", "Concert", "Production", "Line arrays, moving heads & LED video walls for unforgettable concerts.", gallery3, "Concert-grade AV with line array sound, intelligent lighting, and massive LED video walls for spectacular live performances.", [
+export const concertData = makeEvent("events/concerts", "/events/concerts", "Concert", "Production", "Line arrays, moving heads & LED video walls for unforgettable concerts.", gallery3, "Concert-grade AV with line array sound, intelligent lighting, and massive LED video walls for spectacular live performances.", [
   { icon: "CheckCircle2", title: "Line Array Sound", desc: "JBL line arrays for powerful, even coverage" },
   { icon: "CheckCircle2", title: "LED Video Walls", desc: "Massive LED screens for visuals and branding" },
   { icon: "CheckCircle2", title: "Moving Head Lights", desc: "Intelligent lighting with beam, spot, and wash" },
@@ -121,7 +120,7 @@ export const concertData = makeEvent("concerts", "/events/concerts", "Concert", 
   { image: gallery6, title: "Large Concert", frontDescription: "Festival-grade production", backDescription: "Full concert production with massive sound, lights, and LED.", features: ["8× line array", "Full lighting rig", "Multiple LED walls", "Stage design"] },
 ], sharedGallery(gallery3, gallery6, gallery2, "Concert"));
 
-export const exhibitionData = makeEvent("exhibitions", "/events/exhibitions", "Exhibition", "AV", "Booth AV, LED walls & interactive displays for trade shows.", gallery4, "Professional exhibition AV with LED walls, interactive displays, and booth setups for trade shows and expos.", [
+export const exhibitionData = makeEvent("events/exhibitions", "/events/exhibitions", "Exhibition", "AV", "Booth AV, LED walls & interactive displays for trade shows.", gallery4, "Professional exhibition AV with LED walls, interactive displays, and booth setups for trade shows and expos.", [
   { icon: "CheckCircle2", title: "Booth AV", desc: "LED screens and sound for exhibition booths" },
   { icon: "CheckCircle2", title: "Interactive Displays", desc: "Touch screens and interactive kiosks" },
   { icon: "CheckCircle2", title: "LED Walls", desc: "Large-format LED for brand visibility" },
@@ -133,7 +132,7 @@ export const exhibitionData = makeEvent("exhibitions", "/events/exhibitions", "E
   { image: gallery1, title: "Large Booth", frontDescription: "Premium booth setup", backDescription: "Large LED wall, premium sound, and multiple interactive displays.", features: ["LED wall", "Premium sound", "2 interactive displays", "Branded lighting"] },
 ], sharedGallery(gallery4, gallery1, gallery5, "Exhibition"));
 
-export const birthdayData = makeEvent("birthday-parties", "/events/birthday-parties", "Birthday", "Party", "DJ setups, LED dance floors & karaoke for amazing birthday celebrations.", gallery6, "Make birthdays unforgettable with DJ setups, LED dance floors, karaoke, and party lighting that turns any venue into a celebration.", [
+export const birthdayData = makeEvent("events/birthday-parties", "/events/birthday-parties", "Birthday", "Party", "DJ setups, LED dance floors & karaoke for amazing birthday celebrations.", gallery6, "Make birthdays unforgettable with DJ setups, LED dance floors, karaoke, and party lighting that turns any venue into a celebration.", [
   { icon: "CheckCircle2", title: "DJ Setup", desc: "Professional DJ equipment with speakers and lights" },
   { icon: "CheckCircle2", title: "LED Dance Floor", desc: "Colorful LED dance floor tiles" },
   { icon: "CheckCircle2", title: "Karaoke", desc: "50,000+ songs with wireless microphones" },
@@ -145,7 +144,7 @@ export const birthdayData = makeEvent("birthday-parties", "/events/birthday-part
   { image: gallery5, title: "Adult Birthday", frontDescription: "Premium birthday celebration", backDescription: "Complete party setup with DJ, LED dance floor, and professional lighting.", features: ["DJ setup", "LED dance floor", "Moving heads", "Premium sound"] },
 ], sharedGallery(gallery6, gallery5, gallery3, "Birthday"));
 
-export const productLaunchData = makeEvent("product-launches", "/events/product-launches", "Product", "Launch", "Dramatic LED reveals, precision lighting & stage setups for impactful launches.", gallery5, "Create jaw-dropping product launches with dramatic LED reveals, precision lighting, and professional stage setups that leave a lasting impression.", [
+export const productLaunchData = makeEvent("events/product-launches", "/events/product-launches", "Product", "Launch", "Dramatic LED reveals, precision lighting & stage setups for impactful launches.", gallery5, "Create jaw-dropping product launches with dramatic LED reveals, precision lighting, and professional stage setups that leave a lasting impression.", [
   { icon: "CheckCircle2", title: "LED Reveal Wall", desc: "Dramatic LED wall for product reveal moments" },
   { icon: "CheckCircle2", title: "Stage Setup", desc: "Professional stage with branded backdrop" },
   { icon: "CheckCircle2", title: "Lighting Design", desc: "Dramatic lighting for the big reveal moment" },
@@ -157,7 +156,7 @@ export const productLaunchData = makeEvent("product-launches", "/events/product-
   { image: gallery1, title: "Premium Launch", frontDescription: "Premium launch production", backDescription: "Premium launch with multiple LED walls, live streaming, and full production.", features: ["Multiple LED walls", "Live streaming", "Full production", "Photography"] },
 ], sharedGallery(gallery5, gallery1, gallery4, "Product Launch"));
 
-export const collegeData = makeEvent("college-events", "/events/college-events", "College", "Events", "AV for fests, seminars, cultural programs & college celebrations.", gallery4, "Complete AV solutions for college events — fests, seminars, cultural programs, and celebrations with professional sound, lighting, and visuals.", [
+export const collegeData = makeEvent("events/college-events", "/events/college-events", "College", "Events", "AV for fests, seminars, cultural programs & college celebrations.", gallery4, "Complete AV solutions for college events — fests, seminars, cultural programs, and celebrations with professional sound, lighting, and visuals.", [
   { icon: "CheckCircle2", title: "Stage Sound", desc: "Powerful sound for performances and speeches" },
   { icon: "CheckCircle2", title: "LED Display", desc: "LED wall or projector for visuals and branding" },
   { icon: "CheckCircle2", title: "Stage Lighting", desc: "Dynamic lighting for performances and shows" },
@@ -169,7 +168,7 @@ export const collegeData = makeEvent("college-events", "/events/college-events",
   { image: gallery3, title: "Seminar Package", frontDescription: "AV for seminars & talks", backDescription: "Professional AV for seminars with projector, sound, and mics.", features: ["HD projector", "Sound system", "Wireless mics", "Tech support"] },
 ], sharedGallery(gallery4, gallery3, gallery6, "College Event"));
 
-export const culturalData = makeEvent("cultural-events", "/events/cultural-events", "Cultural", "Events", "Traditional & modern cultural celebrations with authentic AV setups.", gallery2, "Celebrate culture with professional AV — from traditional performances to modern cultural events, we provide authentic sound, lighting, and visual setups.", [
+export const culturalData = makeEvent("events/cultural-events", "/events/cultural-events", "Cultural", "Events", "Traditional & modern cultural celebrations with authentic AV setups.", gallery2, "Celebrate culture with professional AV — from traditional performances to modern cultural events, we provide authentic sound, lighting, and visual setups.", [
   { icon: "CheckCircle2", title: "Stage Sound", desc: "Clear sound for performances and music" },
   { icon: "CheckCircle2", title: "Cultural Lighting", desc: "Warm, festive lighting for cultural ambiance" },
   { icon: "CheckCircle2", title: "LED Display", desc: "LED wall for visuals and live coverage" },
@@ -180,7 +179,7 @@ export const culturalData = makeEvent("cultural-events", "/events/cultural-event
   { image: gallery2, title: "Cultural Night", frontDescription: "Complete cultural event AV", backDescription: "Full AV setup for cultural nights with sound, lighting, and LED.", features: ["Full sound system", "Cultural lighting", "LED display", "Recording"] },
 ], sharedGallery(gallery2, gallery3, gallery4, "Cultural Event"));
 
-export const fashionData = makeEvent("fashion-shows", "/events/fashion-shows", "Fashion", "Show", "Runway lighting, sound & LED backdrops for stunning fashion events.", gallery5, "Create stunning fashion shows with professional runway lighting, concert-grade sound, and LED backdrops that complement your collection.", [
+export const fashionData = makeEvent("events/fashion-shows", "/events/fashion-shows", "Fashion", "Show", "Runway lighting, sound & LED backdrops for stunning fashion events.", gallery5, "Create stunning fashion shows with professional runway lighting, concert-grade sound, and LED backdrops that complement your collection.", [
   { icon: "CheckCircle2", title: "Runway Lighting", desc: "Precision lighting for the runway walk" },
   { icon: "CheckCircle2", title: "Sound System", desc: "Fashion-show music with powerful bass" },
   { icon: "CheckCircle2", title: "LED Backdrop", desc: "LED wall for branding and visuals" },
@@ -191,7 +190,7 @@ export const fashionData = makeEvent("fashion-shows", "/events/fashion-shows", "
   { image: gallery5, title: "Runway Package", badge: "Stunning", frontDescription: "Complete fashion show AV", backDescription: "Full fashion show setup with runway lighting, sound, and LED.", features: ["Runway lights", "Sound system", "LED backdrop", "Photography"] },
 ], sharedGallery(gallery5, gallery2, gallery6, "Fashion Show"));
 
-export const awardData = makeEvent("award-functions", "/events/award-functions", "Award", "Functions", "Elegant stage, sound & visual setups for prestigious award ceremonies.", gallery5, "Host prestigious award ceremonies with elegant stage setups, crystal-clear sound, and stunning visual displays that celebrate achievement.", [
+export const awardData = makeEvent("events/award-functions", "/events/award-functions", "Award", "Functions", "Elegant stage, sound & visual setups for prestigious award ceremonies.", gallery5, "Host prestigious award ceremonies with elegant stage setups, crystal-clear sound, and stunning visual displays that celebrate achievement.", [
   { icon: "CheckCircle2", title: "Elegant Stage", desc: "Professional stage with branded backdrop" },
   { icon: "CheckCircle2", title: "Sound System", desc: "Clear audio for announcements and speeches" },
   { icon: "CheckCircle2", title: "LED Display", desc: "LED wall for nominees and winner visuals" },
@@ -202,7 +201,7 @@ export const awardData = makeEvent("award-functions", "/events/award-functions",
   { image: gallery5, title: "Award Package", badge: "Elegant", frontDescription: "Complete award function AV", backDescription: "Full award ceremony setup with stage, sound, LED, and spotlight.", features: ["Professional stage", "Sound system", "LED display", "Spotlight"] },
 ], sharedGallery(gallery5, gallery1, gallery4, "Award Function"));
 
-export const musicFestivalData = makeEvent("music-festivals", "/events/music-festivals", "Music", "Festivals", "Festival-grade sound, LED installations & lighting for epic music events.", gallery3, "Epic music festivals need epic AV — festival-grade line arrays, massive LED installations, and professional lighting that keeps the crowd energized.", [
+export const musicFestivalData = makeEvent("events/music-festivals", "/events/music-festivals", "Music", "Festivals", "Festival-grade sound, LED installations & lighting for epic music events.", gallery3, "Epic music festivals need epic AV — festival-grade line arrays, massive LED installations, and professional lighting that keeps the crowd energized.", [
   { icon: "CheckCircle2", title: "Festival Sound", desc: "Massive line arrays for 1000-10000+ attendees" },
   { icon: "CheckCircle2", title: "LED Installations", desc: "Multiple LED walls and creative installations" },
   { icon: "CheckCircle2", title: "Stage Lighting", desc: "Full lighting rig with moving heads and lasers" },
@@ -213,7 +212,7 @@ export const musicFestivalData = makeEvent("music-festivals", "/events/music-fes
   { image: gallery3, title: "Festival Package", badge: "Epic", frontDescription: "Full festival AV production", backDescription: "Complete festival AV with massive sound, LED, and lighting.", features: ["Line array system", "Multiple LED walls", "Full lighting rig", "Monitor system"] },
 ], sharedGallery(gallery3, gallery6, gallery2, "Music Festival"));
 
-export const privatePartyData = makeEvent("private-parties", "/events/private-parties", "Private", "Party", "Intimate gatherings with premium AV — DJ, sound, lights & karaoke.", gallery6, "Premium AV for intimate private parties — DJ setups, powerful sound, party lights, and karaoke that turns any gathering into an unforgettable celebration.", [
+export const privatePartyData = makeEvent("events/private-parties", "/events/private-parties", "Private", "Party", "Intimate gatherings with premium AV — DJ, sound, lights & karaoke.", gallery6, "Premium AV for intimate private parties — DJ setups, powerful sound, party lights, and karaoke that turns any gathering into an unforgettable celebration.", [
   { icon: "CheckCircle2", title: "DJ Setup", desc: "Professional DJ equipment and controllers" },
   { icon: "CheckCircle2", title: "Sound System", desc: "Quality speakers for music and ambiance" },
   { icon: "CheckCircle2", title: "Party Lights", desc: "Moving heads, par cans, and atmosphere effects" },

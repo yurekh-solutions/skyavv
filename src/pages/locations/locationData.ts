@@ -11,7 +11,7 @@ const sharedServices = [
 ];
 
 const sharedWhyChooseUs = (city: string) => [
-  { title: "Free Delivery in " + city, desc: "Free delivery and setup within city limits" },
+  { title: "Included Delivery in " + city, desc: "Included delivery and setup within city limits" },
   { title: "15+ Years Experience", desc: "Trusted AV partner with 5000+ events powered" },
   { title: "Same-Day Setup", desc: "Urgent requirement? We deliver within hours" },
   { title: "24/7 Support", desc: "Round-the-clock technical support during events" },
@@ -33,7 +33,7 @@ const sharedTestimonials = (city: string) => [
 ];
 
 const sharedFaqs = (city: string): FAQItem[] => [
-  { category: "Delivery", question: `Do you deliver to ${city}?`, answer: `Yes! We provide complete AV equipment rental in ${city} with free delivery and setup. We also serve all surrounding areas.` },
+  { category: "Delivery", question: `Do you deliver to ${city}?`, answer: `Yes! We provide complete AV equipment rental in ${city} with included delivery and setup. We also serve all surrounding areas.` },
   { category: "Pricing", question: `How much does AV rental cost in ${city}?`, answer: "Rates vary by equipment and event type. LED walls start from Rs. 15,000/day, projectors from Rs. 2,500/day, sound from Rs. 5,000/day. Contact us for a custom quote." },
   { category: "Setup", question: "Is setup included?", answer: "Yes! Every rental includes professional delivery, setup, on-site technical support, and teardown at no extra cost." },
   { category: "Booking", question: `How do I book AV equipment in ${city}?`, answer: "Call us at +91 86559 73366 or submit a quote request online. We respond within 30 minutes during business hours." },
@@ -65,17 +65,17 @@ const makeLocation = (
 });
 
 export const mumbaiData: LocationPageData = {
-  ...makeLocation("mumbai", "/locations/mumbai", "Mumbai", "AV Rental",
-    "AV equipment rental across all Mumbai areas — LED walls, sound, lighting, projectors & more. Free delivery citywide.",
-    "As Mumbai's most trusted AV rental company, we serve every corner of the city — from South Mumbai to the Western Suburbs, Central Mumbai to the Harbour Line. With 15+ years of experience and 5000+ events, we deliver premium AV equipment with free setup across all Mumbai areas.",
+  ...makeLocation("locations/mumbai", "/locations/mumbai", "Mumbai", "AV Rental",
+    "AV equipment rental across all Mumbai areas — LED walls, sound, lighting, projectors & more. Included delivery citywide.",
+    "As Mumbai's most trusted AV rental company, we serve every corner of the city — from South Mumbai to the Western Suburbs, Central Mumbai to the Harbour Line. With 15+ years of experience and 5000+ events, we deliver premium AV equipment with included setup across all Mumbai areas.",
     ["Andheri", "Bandra", "BKC", "Colaba", "Dahisar", "Juhu", "Lower Parel", "Malad", "Powai", "Thane Road", "Worli", "Navi Mumbai"],
     "Mumbai",
   ),
 };
 
 export const naviMumbaiData: LocationPageData = {
-  ...makeLocation("naviMumbai", "/locations/navi-mumbai", "Navi Mumbai", "AV Rental",
-    "AV equipment rental in Navi Mumbai — LED walls, sound systems, lighting & projectors. Free delivery across Navi Mumbai.",
+  ...makeLocation("locations/navi-mumbai", "/locations/navi-mumbai", "Navi Mumbai", "AV Rental",
+    "AV equipment rental in Navi Mumbai — LED walls, sound systems, lighting & projectors. Included delivery across Navi Mumbai.",
     "We provide complete AV equipment rental across Navi Mumbai — Vashi, Kharghar, Belapur, Panvel, and all surrounding nodes. From corporate events in Vashi to weddings in Kharghar, we deliver premium AV with professional setup.",
     ["Belapur", "CBD Belapur", "Kharghar", "Nerul", "Panvel", "Sanpada", "Seawoods", "Ulwe", "Vashi"],
     "Navi Mumbai",
@@ -83,16 +83,16 @@ export const naviMumbaiData: LocationPageData = {
 };
 
 export const thaneData: LocationPageData = {
-  ...makeLocation("thane", "/locations/thane", "Thane", "AV Rental",
+  ...makeLocation("locations/thane", "/locations/thane", "Thane", "AV Rental",
     "AV equipment rental in Thane — LED walls, sound, lighting & projectors for events across Thane city.",
-    "Serving all of Thane — from Thane West to Thane East, Kalyan to Dombivli. We provide premium AV equipment for weddings, corporate events, and celebrations across Thane with free delivery and expert setup.",
+    "Serving all of Thane — from Thane West to Thane East, Kalyan to Dombivli. We provide premium AV equipment for weddings, corporate events, and celebrations across Thane with included delivery and expert setup.",
     ["Dombivli", "Ghodbunder Road", "Kalyan", "Majiwada", "Pokhran Road", "Thane West", "Vasant Vihar"],
     "Thane",
   ),
 };
 
 export const puneData: LocationPageData = {
-  ...makeLocation("pune", "/locations/pune", "Pune", "AV Rental",
+  ...makeLocation("locations/pune", "/locations/pune", "Pune", "AV Rental",
     "AV equipment rental in Pune — LED walls, sound systems, stage lighting & more for all event types.",
     "We extend our premium AV services to Pune — covering Hinjewadi, Kharadi, Koregaon Park, Baner, and all major areas. From IT corporate events to grand weddings, we deliver the same quality that Mumbai trusts.",
     ["Baner", "Hinjewadi", "Kharadi", "Koregaon Park", "Magarpatta", "Shivaji Nagar", "Viman Nagar", "Wakad"],
@@ -101,7 +101,7 @@ export const puneData: LocationPageData = {
 };
 
 export const lonavalaData: LocationPageData = {
-  seoKey: "lonavala", url: "/locations/lonavala",
+  seoKey: "locations/lonavala", url: "/locations/lonavala",
   pageTitle: "Lonavala", pageHighlight: "AV Rental",
   description: "Destination event AV rental in Lonavala — LED walls, sound & lighting for resort weddings, corporate offsites & retreats.",
   overview: "Planning a resort wedding, corporate offsite, or retreat in Lonavala? We bring Mumbai's premium AV equipment to the hills. Our team handles transportation, setup, and support at any resort or venue in and around Lonavala.",
@@ -131,7 +131,7 @@ export const lonavalaData: LocationPageData = {
 };
 
 export const suratData: LocationPageData = {
-  seoKey: "surat", url: "/locations/surat",
+  seoKey: "locations/surat", url: "/locations/surat",
   pageTitle: "Surat", pageHighlight: "AV Rental",
   description: "AV equipment rental in Surat — LED walls, sound systems, lighting & projectors for weddings and corporate events.",
   overview: "We bring Mumbai's premium AV equipment to Surat. From grand weddings to corporate events, we deliver top-quality LED walls, sound systems, and lighting with professional setup and technical support across Surat.",
@@ -161,7 +161,7 @@ export const suratData: LocationPageData = {
 };
 
 export const goaData: LocationPageData = {
-  seoKey: "goa", url: "/locations/goa",
+  seoKey: "locations/goa", url: "/locations/goa",
   pageTitle: "Goa", pageHighlight: "AV Rental",
   description: "Destination event AV rental in Goa — LED walls, sound & lighting for beach weddings, corporate retreats & parties.",
   overview: "Planning a destination event in Goa? We bring Mumbai's premium AV equipment to Goa's most beautiful venues. From beach weddings to corporate retreats, villa parties to music festivals — we deliver spectacular AV at any Goan location.",
